@@ -88,7 +88,7 @@ public class box_Sculpting : MonoBehaviour
          if(FindObjectOfType<box_Sculpting>().cubeposes.Count == 0)
             {
                 FindObjectOfType<clicks>().bear.enabled = true;
-                confitee.Play();
+               
                 StartCoroutine(win());
             }
 
@@ -149,6 +149,7 @@ public class box_Sculpting : MonoBehaviour
 
     IEnumerator win()
     {
+        confitee.Play();
         yield return new WaitForSeconds(4f);
         Panel.SetActive(true);
     }

@@ -13,7 +13,7 @@ public class WinScript : MonoBehaviour
 
     public KnifeScript playerKnife;
     public AiScript aiKnife;
-
+    public GameObject text;
     public GameObject lostPanel;
 
     public bool isLost = false;
@@ -39,6 +39,7 @@ public class WinScript : MonoBehaviour
             blast.SetActive(true);
             winText.SetActive(true);
             StartCoroutine(winJump());
+            Destroy(text);
         }
 
         if (other.CompareTag("AiKnife"))

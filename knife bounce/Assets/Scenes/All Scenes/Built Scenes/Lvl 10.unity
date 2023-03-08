@@ -1532,13 +1532,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -12099,13 +12092,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -20277,13 +20263,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -22410,13 +22389,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -23857,13 +23829,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -25108,7 +25073,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   knife: {fileID: 280337304}
   isOver: 0
-  losePanel: {fileID: 5830666582127998942}
+  losePanel: {fileID: 6643461941606409354}
 --- !u!1 &1486550689
 GameObject:
   m_ObjectHideFlags: 0
@@ -70146,7 +70111,8 @@ MonoBehaviour:
   m_text: REWARD  IN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6214961eadff214eb5e486e9f313381, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381, type: 2}
+  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -70470,7 +70436,8 @@ MonoBehaviour:
   m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6214961eadff214eb5e486e9f313381, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381, type: 2}
+  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -70633,7 +70600,8 @@ MonoBehaviour:
   m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6214961eadff214eb5e486e9f313381, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381, type: 2}
+  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -72220,7 +72188,8 @@ ParticleSystemRenderer:
 --- !u!198 &7266181234146856412
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 19874660, guid: c39f135b5ead72a49b86bcf04496181d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 19874660, guid: c39f135b5ead72a49b86bcf04496181d,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7266181234160786754}
@@ -76858,7 +76827,8 @@ ParticleSystem:
 --- !u!198 &7266181234146863636
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 19883180, guid: c39f135b5ead72a49b86bcf04496181d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 19883180, guid: c39f135b5ead72a49b86bcf04496181d,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7266181234160779022}
@@ -81505,7 +81475,8 @@ ParticleSystem:
 --- !u!198 &7266181234146891140
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 19847996, guid: c39f135b5ead72a49b86bcf04496181d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 19847996, guid: c39f135b5ead72a49b86bcf04496181d,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7266181234160775302}

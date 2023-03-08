@@ -66,7 +66,7 @@ public class CoinScript : MonoBehaviour
 
         //Counter.text = PlayerPrefs.GetInt("Countcoin").ToString();
 
-        cashScript.cashValue = CoinValue;
+        cashScript.cashValue += CoinValue;
 
         CoinValue += 50;
     }

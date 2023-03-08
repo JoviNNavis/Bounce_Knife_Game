@@ -111,12 +111,11 @@ GameObject:
   - component: {fileID: 2590846551577548755}
   - component: {fileID: 2590846551577548757}
   - component: {fileID: 2590846551577548754}
-  - component: {fileID: 5021094892236234708}
   - component: {fileID: 699753498705485528}
-  - component: {fileID: 1295768178702481238}
   - component: {fileID: 2069596438445419389}
   - component: {fileID: 9060527234637685904}
   - component: {fileID: 3346538960117507289}
+  - component: {fileID: 2744976442706813022}
   m_Layer: 0
   m_Name: KnifePrefab
   m_TagString: Knife
@@ -153,8 +152,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 0.9626236, y: 0.35, z: 0.35}
-  m_Center: {x: 2.2772603, y: 0.014375776, z: -0.099038824}
+  m_Size: {x: 1.1448841, y: 0.4441191, z: 0.56620973}
+  m_Center: {x: 2.18613, y: 0.039272428, z: -0.20714366}
 --- !u!114 &2590846551577548754
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -169,20 +168,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 30
   jelly: {fileID: 5023298535138902412}
---- !u!136 &5021094892236234708
-CapsuleCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2590846551577548752}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 1
-  m_Enabled: 1
-  m_Radius: 0.22029963
-  m_Height: 0.75932956
-  m_Direction: 0
-  m_Center: {x: 1.4320034, y: 0.01052542, z: -0.1437116}
 --- !u!135 &699753498705485528
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -191,23 +176,10 @@ SphereCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2590846551577548752}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Radius: 0.05
-  m_Center: {x: 0.06, y: 0.02, z: -0.005}
---- !u!135 &1295768178702481238
-SphereCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2590846551577548752}
-  m_Material: {fileID: 0}
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.02
+  m_Radius: 0.2
   m_Center: {x: 0.06, y: 0.02, z: -0.005}
 --- !u!95 &2069596438445419389
 Animator:
@@ -256,6 +228,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   time: 0
+--- !u!135 &2744976442706813022
+SphereCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2590846551577548752}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Radius: 0.2
+  m_Center: {x: 0.06, y: 0.02, z: -0.005}
 --- !u!1 &2899988264808368394
 GameObject:
   m_ObjectHideFlags: 0
@@ -283,8 +268,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2899988264808368394}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.061, y: 0.024, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0.256, y: 0.04, z: 0}
+  m_LocalScale: {x: 1, y: 4.7975764, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 2590846551577548755}
