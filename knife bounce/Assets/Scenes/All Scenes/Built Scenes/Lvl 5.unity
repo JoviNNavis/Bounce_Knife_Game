@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2217727, g: 0.7096865, b: 0.781853, a: 1}
+  m_IndirectSpecularColor: {r: 0.50159144, g: 0.873295, b: 0.9094268, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -1434,13 +1434,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -2078,7 +2071,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150396149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.24, y: 50.77, z: -0.1}
+  m_LocalPosition: {x: -14.29, y: 50.77, z: -0.1}
   m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3288,7 +3281,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280337302}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -4.68, y: 51.08, z: 0}
+  m_LocalPosition: {x: -7.11, y: 51.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11265,13 +11258,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -13248,6 +13234,7 @@ MonoBehaviour:
   jumpPos: {fileID: 1507046142}
   playerKnife: {fileID: 1817783779}
   aiKnife: {fileID: 1920393867}
+  text: {fileID: 0}
   lostPanel: {fileID: 5634819622248250101}
   isLost: 0
 --- !u!54 &837195052
@@ -19335,13 +19322,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -21404,13 +21384,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -23000,13 +22973,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -40830,7 +40796,8 @@ MonoBehaviour:
   m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6214961eadff214eb5e486e9f313381, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381, type: 2}
+  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -40973,7 +40940,8 @@ MonoBehaviour:
   m_text: 5
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6214961eadff214eb5e486e9f313381, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381, type: 2}
+  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -41200,7 +41168,8 @@ MonoBehaviour:
   m_text: REWARD  IN
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: d6214961eadff214eb5e486e9f313381, type: 2}
-  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381, type: 2}
+  m_sharedMaterial: {fileID: 2081446301306759604, guid: d6214961eadff214eb5e486e9f313381,
+    type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -83638,7 +83607,8 @@ Transform:
 --- !u!198 &8741419651816683895
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 19847996, guid: c39f135b5ead72a49b86bcf04496181d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 19847996, guid: c39f135b5ead72a49b86bcf04496181d,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8741419651798047861}
@@ -88258,7 +88228,8 @@ ParticleSystem:
 --- !u!198 &8741419651816703719
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 19883180, guid: c39f135b5ead72a49b86bcf04496181d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 19883180, guid: c39f135b5ead72a49b86bcf04496181d,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8741419651798045693}
@@ -92905,7 +92876,8 @@ ParticleSystem:
 --- !u!198 &8741419651816710447
 ParticleSystem:
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 19874660, guid: c39f135b5ead72a49b86bcf04496181d, type: 3}
+  m_CorrespondingSourceObject: {fileID: 19874660, guid: c39f135b5ead72a49b86bcf04496181d,
+    type: 3}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8741419651798069681}

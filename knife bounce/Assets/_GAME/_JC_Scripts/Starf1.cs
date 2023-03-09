@@ -7,11 +7,13 @@ public class Starf1 : MonoBehaviour
 {
     private MeshCollider meshCol;
     public FailScript1 failS;
+
     // Start is called before the first frame update
     void Start()
     {
         meshCol = GetComponent<MeshCollider>();
         StartCoroutine(starf());
+
     }
 
     // Update is called once per frame
@@ -28,7 +30,13 @@ public class Starf1 : MonoBehaviour
             Destroy(this.gameObject, 0.5f);
         }
     }
-
+    private void OnCollisionEnter(Collision collision)
+    {
+        if (collision.gameObject.CompareTag("Knife"))
+        {
+           // DOTween.Kill(transform);
+        }
+    }
     private void OnTriggerExit(Collider other)
     {
         if (other.CompareTag("KnifePref"))

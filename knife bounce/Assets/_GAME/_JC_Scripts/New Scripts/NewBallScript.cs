@@ -6,7 +6,7 @@ public class NewBallScript : MonoBehaviour
 {
     public float upForce;
     public bool powerup_mode;
-
+   
     public ParticleSystem _fire;
     public Material skybox;
     public Material skybox2;
@@ -38,8 +38,10 @@ public class NewBallScript : MonoBehaviour
         {
             if (FindObjectOfType<Ballpowerup>().time < 0.3f)
             {
-                float _newUpforce = upForce + 150;
-                Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
+                //float _newUpforce = upForce + 150;
+                //Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
+                Rb.AddForce(transform.up * upForce, ForceMode.Force);
+                Rb.mass = 0.7f;
                 powerup_mode = true;
                 RenderSettings.skybox = skybox2;
                 tail.enabled = false;
@@ -56,6 +58,8 @@ public class NewBallScript : MonoBehaviour
 
                 powerup_mode = false;
                 RenderSettings.skybox = skybox;
+                Rb.mass = 1f;
+
                 Rb.AddForce(transform.up * upForce, ForceMode.Force);
                 // FindObjectOfType<ColorScript>().up.color = FindObjectOfType<ColorScript>().before_color1;
                 // FindObjectOfType<ColorScript>().down.color = FindObjectOfType<ColorScript>().before_color2;

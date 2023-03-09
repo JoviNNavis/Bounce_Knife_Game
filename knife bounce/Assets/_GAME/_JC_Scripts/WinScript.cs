@@ -23,7 +23,7 @@ public class WinScript : MonoBehaviour
         
     }
 
-    // Update is called once per frame
+    
     void Update()
     {
         

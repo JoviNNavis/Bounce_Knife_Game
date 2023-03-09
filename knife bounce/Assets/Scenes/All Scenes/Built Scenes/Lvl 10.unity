@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2217727, g: 0.7096865, b: 0.781853, a: 1}
+  m_IndirectSpecularColor: {r: 0.50159144, g: 0.873295, b: 0.9094268, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -868,6 +868,7 @@ GameObject:
   - component: {fileID: 73574108}
   - component: {fileID: 73574112}
   - component: {fileID: 73574113}
+  - component: {fileID: 73574114}
   m_Layer: 0
   m_Name: SpikeAi2
   m_TagString: Untagged
@@ -983,6 +984,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiFail: {fileID: 2088852406231027602}
+--- !u!65 &73574114
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 73574105}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &78444265
 GameObject:
   m_ObjectHideFlags: 0
@@ -1224,6 +1238,7 @@ GameObject:
   - component: {fileID: 100803898}
   - component: {fileID: 100803903}
   - component: {fileID: 100803904}
+  - component: {fileID: 100803905}
   m_Layer: 0
   m_Name: SpikeAi1
   m_TagString: Untagged
@@ -1339,6 +1354,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiFail: {fileID: 2088852406231027602}
+--- !u!65 &100803905
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100803895}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &102589841
 GameObject:
   m_ObjectHideFlags: 0
@@ -2166,7 +2194,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150396149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.24, y: 50.77, z: -0.1}
+  m_LocalPosition: {x: -14.18, y: 50.77, z: -0.1}
   m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3127,6 +3155,7 @@ GameObject:
   - component: {fileID: 242285248}
   - component: {fileID: 242285253}
   - component: {fileID: 242285254}
+  - component: {fileID: 242285255}
   m_Layer: 0
   m_Name: SpikeAi2
   m_TagString: Untagged
@@ -3242,6 +3271,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiFail: {fileID: 2088852406231027602}
+--- !u!65 &242285255
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 242285245}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &244710610
 GameObject:
   m_ObjectHideFlags: 0
@@ -3504,6 +3546,7 @@ GameObject:
   - component: {fileID: 274942944}
   - component: {fileID: 274942949}
   - component: {fileID: 274942950}
+  - component: {fileID: 274942951}
   m_Layer: 0
   m_Name: SpikeAi2
   m_TagString: Untagged
@@ -3619,6 +3662,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiFail: {fileID: 2088852406231027602}
+--- !u!65 &274942951
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 274942941}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &280337302
 GameObject:
   m_ObjectHideFlags: 0
@@ -3644,7 +3700,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280337302}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -4.68, y: 51.08, z: 0}
+  m_LocalPosition: {x: -6.79, y: 51.08, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -9367,6 +9423,7 @@ GameObject:
   - component: {fileID: 360234223}
   - component: {fileID: 360234228}
   - component: {fileID: 360234229}
+  - component: {fileID: 360234230}
   m_Layer: 0
   m_Name: SpikeP2
   m_TagString: Untagged
@@ -9482,6 +9539,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   failS: {fileID: 2088852405281578932}
+--- !u!65 &360234230
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 360234220}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &364440460
 GameObject:
   m_ObjectHideFlags: 0
@@ -9973,6 +10043,7 @@ GameObject:
   - component: {fileID: 393618296}
   - component: {fileID: 393618301}
   - component: {fileID: 393618302}
+  - component: {fileID: 393618303}
   m_Layer: 0
   m_Name: SpikeP1
   m_TagString: Untagged
@@ -10088,6 +10159,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   failS: {fileID: 2088852405281578932}
+--- !u!65 &393618303
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 393618293}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &394020353
 GameObject:
   m_ObjectHideFlags: 0
@@ -11728,6 +11812,7 @@ GameObject:
   - component: {fileID: 588556348}
   - component: {fileID: 588556353}
   - component: {fileID: 588556354}
+  - component: {fileID: 588556355}
   m_Layer: 0
   m_Name: SpikeP1
   m_TagString: Untagged
@@ -11843,6 +11928,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   failS: {fileID: 2088852405281578932}
+--- !u!65 &588556355
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 588556345}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &592034774
 GameObject:
   m_ObjectHideFlags: 0
@@ -14103,6 +14201,7 @@ MonoBehaviour:
   jumpPos: {fileID: 1507046142}
   playerKnife: {fileID: 1817783779}
   aiKnife: {fileID: 1920393867}
+  text: {fileID: 0}
   lostPanel: {fileID: 5830666582127998942}
   isLost: 0
 --- !u!54 &837195052
@@ -31702,6 +31801,7 @@ GameObject:
   - component: {fileID: 1692356767}
   - component: {fileID: 1692356772}
   - component: {fileID: 1692356773}
+  - component: {fileID: 1692356774}
   m_Layer: 0
   m_Name: SpikeP2
   m_TagString: Untagged
@@ -31817,6 +31917,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   failS: {fileID: 2088852405281578932}
+--- !u!65 &1692356774
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1692356764}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &1693914367
 GameObject:
   m_ObjectHideFlags: 0
@@ -32913,6 +33026,7 @@ GameObject:
   - component: {fileID: 1887347714}
   - component: {fileID: 1887347719}
   - component: {fileID: 1887347720}
+  - component: {fileID: 1887347721}
   m_Layer: 0
   m_Name: SpikeAi1
   m_TagString: Untagged
@@ -33028,6 +33142,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiFail: {fileID: 2088852406231027602}
+--- !u!65 &1887347721
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1887347711}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &1889540677
 GameObject:
   m_ObjectHideFlags: 0
@@ -34145,6 +34272,7 @@ GameObject:
   - component: {fileID: 1999002724}
   - component: {fileID: 1999002729}
   - component: {fileID: 1999002730}
+  - component: {fileID: 1999002731}
   m_Layer: 0
   m_Name: SpikeP2
   m_TagString: Untagged
@@ -34260,6 +34388,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   failS: {fileID: 2088852405281578932}
+--- !u!65 &1999002731
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1999002721}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &2007718616
 GameObject:
   m_ObjectHideFlags: 0
@@ -35067,6 +35208,7 @@ GameObject:
   - component: {fileID: 2078492250}
   - component: {fileID: 2078492254}
   - component: {fileID: 2078492255}
+  - component: {fileID: 2078492256}
   m_Layer: 0
   m_Name: SpikeAi1
   m_TagString: Untagged
@@ -35182,6 +35324,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   aiFail: {fileID: 2088852406231027602}
+--- !u!65 &2078492256
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2078492247}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!1 &2084560537
 GameObject:
   m_ObjectHideFlags: 0
@@ -42787,6 +42942,7 @@ GameObject:
   - component: {fileID: 2811420573020502496}
   - component: {fileID: 2811420573020502501}
   - component: {fileID: 2811420573020502502}
+  - component: {fileID: 2811420573020502503}
   m_Layer: 0
   m_Name: SpikeP1
   m_TagString: Untagged
@@ -66166,6 +66322,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   failS: {fileID: 2088852405281578932}
+--- !u!65 &2811420573020502503
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2008648470547918077}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 0.0060000005, y: 0.01230444, z: 0.0018506158}
+  m_Center: {x: 0, y: 0.00035815645, z: 0.0009253079}
 --- !u!137 &2818317880008391375
 SkinnedMeshRenderer:
   m_ObjectHideFlags: 0
@@ -67283,7 +67452,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 4227354598680212446}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: -16.01}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:

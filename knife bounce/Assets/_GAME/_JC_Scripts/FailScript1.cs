@@ -52,12 +52,20 @@ public class FailScript1 : MonoBehaviour
         //    var firstKnife = Knifes.
         //}
     }
-    private void OnTriggerEnter(Collider collision)
+    //private void OnTriggerEnter(Collider collision)
+    //{
+    //    if (collision.gameObject.tag == "Knife")
+    //    {
+    //        knifeCounter.knifeCountValue += 1;
+    //        Knifes.Add(collision.transform);
+    //    }
+    //}
+    private void OnTriggerEnter(Collider other)
     {
-        if (collision.gameObject.tag == "Knife")
+        if (other.gameObject.tag == "Knife")
         {
             knifeCounter.knifeCountValue += 1;
-            Knifes.Add(collision.transform);
+            Knifes.Add(other.transform);
         }
     }
     private void OnCollisionEnter(Collision collision)
