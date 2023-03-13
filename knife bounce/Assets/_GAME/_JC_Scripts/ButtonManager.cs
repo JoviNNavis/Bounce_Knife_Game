@@ -113,6 +113,12 @@ public class ButtonManager : MonoBehaviour
         countdownPanel.SetActive(true);
     }
 
+    public void ExtraChest()
+    {
+        ChestlosePanel.SetActive(false);
+        countdownPanel.SetActive(true);
+    }
+
     IEnumerator playButton1()
     {
         yield return new WaitForSeconds(2f);

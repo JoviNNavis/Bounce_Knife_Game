@@ -33,6 +33,7 @@ public class KnifePrefabScript : MonoBehaviour
 
         if (other.gameObject.CompareTag("AfterBall"))
         {
+            transform.position -= new Vector3(0, 0, 0) * 0 * Time.deltaTime;
             other.transform.SetParent(this.transform, true);
             transform.DOJump(new Vector3(10, 10, 10), 5, 1, 4);
             Destroy(this.gameObject, 0.5f);

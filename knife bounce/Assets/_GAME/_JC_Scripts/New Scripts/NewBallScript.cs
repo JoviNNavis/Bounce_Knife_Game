@@ -36,7 +36,7 @@ public class NewBallScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Knife") || collision.gameObject.CompareTag("DKnife"))
         {
-            if (FindObjectOfType<Ballpowerup>().time < 0.3f)
+            if (FindObjectOfType<Ballpowerup>().time < 0.4f)
             {
                 //float _newUpforce = upForce + 150;
                 //Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);

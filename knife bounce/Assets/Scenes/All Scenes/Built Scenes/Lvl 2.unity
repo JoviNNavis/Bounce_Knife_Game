@@ -2171,7 +2171,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150396149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -20.55, y: 25.3, z: -0.1}
+  m_LocalPosition: {x: -15.55, y: 25.3, z: -0.1}
   m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -4008,7 +4008,7 @@ MonoBehaviour:
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
-  spanwPosy: 25.651
+  spanwPosy: 25.7
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0
@@ -13690,7 +13690,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 620067323}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.419, y: 1.57, z: -0.153}
+  m_LocalPosition: {x: 0.4107, y: 1.57, z: -0.1728}
   m_LocalScale: {x: 0.07, y: 1.5, z: 0.07}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -13818,7 +13818,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 624861572}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43, y: 1.57, z: 0.073}
+  m_LocalPosition: {x: 0.4271, y: 1.57, z: 0.0805}
   m_LocalScale: {x: 0.07, y: 1.5, z: 0.07}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -17289,7 +17289,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 909800084}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.409, y: 1.57, z: 0.152}
+  m_LocalPosition: {x: 0.4013, y: 1.57, z: 0.1638}
   m_LocalScale: {x: 0.07, y: 1.5, z: 0.07}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -18239,7 +18239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 968450845}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0.43, y: 1.57, z: -0.076}
+  m_LocalPosition: {x: 0.4323, y: 1.57, z: -0.0858}
   m_LocalScale: {x: 0.07, y: 1.5, z: 0.07}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -30276,7 +30276,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1490950663}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 500573944}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: ExtraChest
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &1490950663
 MonoBehaviour:
   m_ObjectHideFlags: 0
