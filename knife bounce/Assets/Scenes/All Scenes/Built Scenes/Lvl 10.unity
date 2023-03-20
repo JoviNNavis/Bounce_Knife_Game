@@ -14318,6 +14318,8 @@ MonoBehaviour:
   winText: {fileID: 525053811}
   lvl: {fileID: 811027089}
   retry: {fileID: 127480848}
+  playertarget: {fileID: 1357686245}
+  aitarget: {fileID: 920293312}
   newBall: {fileID: 2007718616}
   jumpPos: {fileID: 1507046142}
   playerKnife: {fileID: 1817783779}

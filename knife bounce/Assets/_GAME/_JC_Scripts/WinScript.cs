@@ -7,6 +7,7 @@ public class WinScript : MonoBehaviour
 {
     public GameObject blast, winText;
     public GameObject lvl, retry;
+    public GameObject playertarget, aitarget;
 
     public GameObject newBall;
     public Transform jumpPos;
@@ -48,6 +49,7 @@ public class WinScript : MonoBehaviour
         {
             isLost = true;
             aiKnife.enabled = false;
+            aitarget.SetActive(false);
         }
 
         if (isLost == true && other.CompareTag("Knife"))

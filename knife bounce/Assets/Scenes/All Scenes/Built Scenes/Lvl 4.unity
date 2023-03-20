@@ -12890,6 +12890,8 @@ MonoBehaviour:
   winText: {fileID: 525053811}
   lvl: {fileID: 811027089}
   retry: {fileID: 127480848}
+  playertarget: {fileID: 1357686245}
+  aitarget: {fileID: 920293312}
   newBall: {fileID: 2007718616}
   jumpPos: {fileID: 223455415}
   playerKnife: {fileID: 1817783779}
@@ -32031,6 +32033,7 @@ MonoBehaviour:
   AiPalce: {fileID: 349829554}
   rndclr: 0
   rankValue: 5.5
+  aicolor: 0
   Knife: {fileID: 2590846551577548752, guid: b1df1881c2835ee4ea799456e4a9c975, type: 3}
 --- !u!1 &1925368877
 GameObject:
@@ -62155,6 +62158,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   belowlevel5: 1
+  spikelevel: 0
   up_color_level5: {r: 0, g: 0, b: 0, a: 0}
   down_color_level5: {r: 0, g: 0, b: 0, a: 0}
   up_color_level1: {r: 0, g: 0, b: 0, a: 0}
@@ -62162,6 +62166,8 @@ MonoBehaviour:
   up: {fileID: 2100000, guid: 92a32fa6c7159a348adc03a271ab64db, type: 2}
   down: {fileID: 2100000, guid: 43817f91b1cc90b4497045d22e785e8a, type: 2}
   spikemat: {fileID: 0}
+  beforecolor: {r: 0, g: 0, b: 0, a: 0}
+  aftercolor: {r: 0, g: 0, b: 0, a: 0}
 --- !u!33 &8077495833364227456
 MeshFilter:
   m_ObjectHideFlags: 0
