@@ -8,24 +8,33 @@ public class KnifePrefabScript : MonoBehaviour
 {
     public float speed;
     private Rigidbody rb;
-
+    public Transform tower;
+    public ParticleSystem drops;
     public JellyMesh jelly;
+
+    public MeshRenderer knife;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        transform.position -= new Vector3(1, 0, 0) * speed * Time.deltaTime;
-    }
+     
 
+        transform.position -= new Vector3(0.7f, 0, 0) * speed * Time.deltaTime;
+    }
+  
+
+   
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.CompareTag("Block") || other.gameObject.CompareTag("Finish"))
         {
+            Instantiate(drops, other.transform.position+ new Vector3(1,0,-0.4f), Quaternion.Euler(0, -270, 0));
             transform.position = new Vector3(-0.581f, transform.localPosition.y, transform.localPosition.z);
             StartCoroutine(disable());
             this.enabled = false;
@@ -33,7 +42,6 @@ public class KnifePrefabScript : MonoBehaviour
 
         if (other.gameObject.CompareTag("AfterBall"))
         {
-            transform.position -= new Vector3(0, 0, 0) * 0 * Time.deltaTime;
             other.transform.SetParent(this.transform, true);
             transform.DOJump(new Vector3(10, 10, 10), 5, 1, 4);
             Destroy(this.gameObject, 0.5f);
@@ -43,7 +51,7 @@ public class KnifePrefabScript : MonoBehaviour
 
     IEnumerator disable()
     {
-        yield return new WaitForSeconds(3f);
+        yield return new WaitForSeconds(1f);
         jelly.enabled = false;
     }
 }

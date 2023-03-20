@@ -11,11 +11,12 @@ public class FailScript : MonoBehaviour
     public List<Transform> Knifes = new List<Transform>();
 
     public KnifeScript1 knife1;
-
+ 
     public GameObject KnifePlayer;
 
     public GameObject newBall;
     public Transform newBallPos;
+    public GameObject puntured_ball;
 
     public Image playerImg;
 
@@ -28,9 +29,9 @@ public class FailScript : MonoBehaviour
     void Update()
     {
 
-        if (Input.GetKeyDown(KeyCode.G) && Knifes.Count >= 3)
+        if (Input.GetKeyDown(KeyCode.G))
         {
-            //StartCoroutine(knifeRemove());
+   
         }
 
         //for(int i = 0; i < Knifes.Count; i++)
@@ -38,32 +39,87 @@ public class FailScript : MonoBehaviour
         //    var firstKnife = Knifes.
         //}
     }
+    
+    //private void OnTriggerEnter(Collider collision)
+    //{
+    //    if (collision.gameObject.tag == "Knife")
+    //    {
+    //        knifeCounter.knifeCountValue += 1;
 
+    //    }
+    //    if (collision.gameObject.tag == "Ball" && Knifes.Count == 1)
+    //    {
+    //        //  Instantiate(puntured_ball, collision.transform.position, Quaternion.Euler(0, -180, 0));
+
+    //        Destroy(collision.gameObject, 0.1f);
+    //        knife1.enabled = false;
+    //        StartCoroutine(knifeR1());
+    //        Debug.Log("touched");
+    //    }
+    //    if (collision.gameObject.tag == "Ball" && Knifes.Count == 2)
+    //    {
+    //        //  Instantiate(puntured_ball, collision.transform.position, Quaternion.Euler(0, -180, 0));
+
+    //        Destroy(collision.gameObject, 0.1f);
+    //        knife1.enabled = false;
+    //        StartCoroutine(knifeR2());
+    //        Debug.Log("touched");
+
+    //    }
+
+    //    if (collision.gameObject.tag == "Ball" && Knifes.Count >= 3)
+    //    {
+    //        //   Instantiate(puntured_ball, collision.transform.position, Quaternion.Euler(0, -180, 0));
+
+    //        Destroy(collision.gameObject, 0.1f);
+    //        knife1.enabled = false;
+    //        StartCoroutine(knifeR3());
+    //        Debug.Log("touched");
+
+    //    }
+    //}
     private void OnCollisionEnter(Collision collision)
     {
         if (collision.gameObject.tag == "Knife")
         {
             knifeCounter.knifeCountValue += 1;
-            Knifes.Add(collision.transform);
+
         }
         if (collision.gameObject.tag == "Ball" && Knifes.Count == 1)
         {
-            Destroy(collision.gameObject, 0.1f);
+            GameObject pball =   Instantiate(puntured_ball, collision.transform.position+ new Vector3(0.3f, 0, 0), Quaternion.Euler(0, -270, 0));
+
+            Destroy(collision.gameObject, 0.2f);
+            Destroy(pball, 0.22f);
+
             knife1.enabled = false;
             StartCoroutine(knifeR1());
+            Debug.Log("touched");
         }
         if (collision.gameObject.tag == "Ball" && Knifes.Count == 2)
         {
-            Destroy(collision.gameObject, 0.1f);
+            GameObject pball = Instantiate(puntured_ball, collision.transform.position+new Vector3(0.3f,0,0), Quaternion.Euler(0, -270, 0));
+
+            Destroy(collision.gameObject, 0.2f);
+           Destroy(pball, 0.22f);
+
             knife1.enabled = false;
             StartCoroutine(knifeR2());
+            Debug.Log("touched");
+
         }
 
         if (collision.gameObject.tag == "Ball" && Knifes.Count >= 3)
         {
-            Destroy(collision.gameObject, 0.1f);
+            GameObject pball = Instantiate(puntured_ball, collision.transform.position+new Vector3(0.3f,0,0), Quaternion.Euler(0, -0270, 0));
+
+            Destroy(collision.gameObject, 0.2f);
+            Destroy(pball, 0.22f);
+
             knife1.enabled = false;
             StartCoroutine(knifeR3());
+            Debug.Log("touched");
+
         }
     }
 

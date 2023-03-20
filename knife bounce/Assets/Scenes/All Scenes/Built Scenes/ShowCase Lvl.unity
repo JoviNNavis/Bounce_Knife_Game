@@ -2915,7 +2915,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 457.4}
+  m_AnchoredPosition: {x: 0, y: 457.40002}
   m_SizeDelta: {x: 187.8, y: 179.80005}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &781840043
@@ -7188,7 +7188,10 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerKnife: {fileID: 0}
+  water: {fileID: 0}
   knifePlayer2: {fileID: 0}
+  changecolor: 0
+  isaicolor: 0
   ai: {fileID: 0}
   cam: {fileID: 0}
   button: {fileID: 0}
@@ -7648,7 +7651,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
-  m_AnchoredPosition: {x: 0, y: 457.4}
+  m_AnchoredPosition: {x: 0, y: 457.40002}
   m_SizeDelta: {x: 1083.1, y: 272.09998}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1276870127746853847
@@ -7855,7 +7858,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -234, y: -4.996826}
+  m_AnchoredPosition: {x: -240.8, y: -4.996826}
   m_SizeDelta: {x: 216, y: 216}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2127160135907788057
@@ -7872,9 +7875,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -8036,7 +8039,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -233.99994, y: -4.996704}
+  m_AnchoredPosition: {x: -234.5, y: -4.996704}
   m_SizeDelta: {x: 346.5, y: 333.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2127160136042140878
@@ -8188,7 +8191,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

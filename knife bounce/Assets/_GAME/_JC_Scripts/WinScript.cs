@@ -34,7 +34,9 @@ public class WinScript : MonoBehaviour
         if(isLost == false && other.CompareTag("Knife"))
         {
             playerKnife.enabled = false;
-            aiKnife.enabled = false;
+            FindObjectOfType<NewBallScript>().islevelcompleted = true;
+            FindObjectOfType<NewBallScript>().stopwatercolor();
+         aiKnife.enabled = false;
             lvl.SetActive(false);
             blast.SetActive(true);
             winText.SetActive(true);

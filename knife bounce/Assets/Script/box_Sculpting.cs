@@ -16,6 +16,7 @@ public class box_Sculpting : MonoBehaviour
     public TextMeshProUGUI speedtext;
     public int randno;
     public bool _isleft, _isright;
+    bool _isconfitee;
     public float time;
     public Animator knife;
     public Animator sword;
@@ -30,6 +31,7 @@ public class box_Sculpting : MonoBehaviour
     {
         knife.enabled = false;
         sword.enabled = false;
+        _isconfitee = false;
         _isautomatic = true;
         moneyText.text = money_coincount.ToString();
         speedtext.text = speed_coincount.ToString();
@@ -39,9 +41,16 @@ public class box_Sculpting : MonoBehaviour
         confitee.Clear();
     }
 
-    public void SPEED()
+    public void playcon()
     {
-      
+        if(cubeposes.Count == 0)
+        {
+            if (_isconfitee) {
+
+                confitee.Play();
+                _isconfitee = false;
+            }
+        }
 
     }
 
@@ -149,7 +158,7 @@ public class box_Sculpting : MonoBehaviour
 
     IEnumerator win()
     {
-        confitee.Play();
+
         yield return new WaitForSeconds(4f);
         Panel.SetActive(true);
     }
@@ -164,7 +173,10 @@ public class box_Sculpting : MonoBehaviour
         if(cubeposes == null)
         {
             cubeposes.Clear();
+           
         }
+
+     
         time += Time.deltaTime;
         movement();
         if ((time >= 4.9f))
@@ -183,6 +195,7 @@ public class box_Sculpting : MonoBehaviour
         }
       
         clicked();
+        playcon();
         auto();
     }
 }

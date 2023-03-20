@@ -20,7 +20,8 @@ public class HitScript : MonoBehaviour
         if(collision.gameObject.tag == "Ball")
         {
             collision.transform.position = new Vector3(0.8f, transform.position.y, 0);
-            collision.rigidbody.isKinematic = true;
+           // collision.rigidbody.isKinematic = true;
+            Destroy(collision.rigidbody);
         }
 
         if (collision.gameObject.tag == "AiBall")

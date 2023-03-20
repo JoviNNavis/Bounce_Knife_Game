@@ -36,8 +36,10 @@ public class SpikeBallScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Knife") || collision.gameObject.CompareTag("DKnife"))
         {
-            if (FindObjectOfType<Ballpowerup>().time < 0.5f)
+            if (FindObjectOfType<Ballpowerup>().time < 0.35f)
             {
+                FindObjectOfType<ButtonManager>().changecolor = true;
+
                 float _newUpforce = upForce + 150;
                 Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
                 powerup_mode = true;
@@ -46,7 +48,7 @@ public class SpikeBallScript : MonoBehaviour
                 _fire.Play();
                 //FindObjectOfType<ColorScript>().up.color = FindObjectOfType<ColorScript>(). after_color1;
                 //FindObjectOfType<ColorScript>(). down.color = FindObjectOfType<ColorScript>().after_color2;
-                FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().spike_powermode;
+             FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().aftercolor;
 
             }
             else
@@ -55,13 +57,15 @@ public class SpikeBallScript : MonoBehaviour
                 _fire.Clear();
 
                 powerup_mode = false;
+                FindObjectOfType<ButtonManager>().changecolor = false;
+
                 RenderSettings.skybox = skybox;
                 Rb.AddForce(transform.up * upForce, ForceMode.Force);
                 //FindObjectOfType<ColorScript>().up.color = FindObjectOfType<ColorScript>().before_color1;
                 //FindObjectOfType<ColorScript>().down.color = FindObjectOfType<ColorScript>().before_color2;
-                FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().beforespikemode;
+                FindObjectOfType<ColorScript>().spikemat.color = FindObjectOfType<ColorScript>().beforecolor;
 
-                //     FindObjectOfType<Knife_anim_controller>().spike.material.color = FindObjectOfType<Knife_anim_controller>().beforeSpikecolor;
+                //    FindObjectOfType<Knife_anim_controller>().spike.material.color = FindObjectOfType<Knife_anim_controller>().beforeSpikecolor;
 
             }
         }

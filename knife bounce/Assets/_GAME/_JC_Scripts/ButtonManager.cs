@@ -7,9 +7,10 @@ using DG.Tweening;
 public class ButtonManager : MonoBehaviour
 {
     public KnifeScript1 playerKnife;
-
+    public MeshRenderer water;
     public KnifeScript knifePlayer2;
-
+    public bool changecolor;
+    public bool isaicolor;
     public AiScript ai;
 
     public GameObject cam, button, playButon;

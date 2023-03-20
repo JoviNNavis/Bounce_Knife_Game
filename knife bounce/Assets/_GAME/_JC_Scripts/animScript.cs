@@ -10,7 +10,7 @@ public class animScript : MonoBehaviour
 
     void Start()
     {
-        
+        waitTime = 0.25f;
     }
 
     // Update is called once per frame
@@ -21,7 +21,7 @@ public class animScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.CompareTag("Ball") || collision.gameObject.CompareTag("AiBall"))
+        if(collision.gameObject.CompareTag("Ball")||collision.gameObject.CompareTag("AiBall"))
         {
             StartCoroutine(animPlay());
         }

@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-using System.Linq;
+using System.Linq; 
 using DG.Tweening;
 
 public class AiFailScript : MonoBehaviour
@@ -41,12 +41,7 @@ public class AiFailScript : MonoBehaviour
     }
 
     private void OnCollisionEnter(Collision collision)
-    {
-        if (collision.gameObject.tag == "AiKnife")
-        {
-            knifeCounter.knifeCountValue += 1;
-            Knifes.Add(collision.transform);
-        }
+    { 
 
         if (collision.gameObject.tag == "AiBall" && Knifes.Count == 1)
         {

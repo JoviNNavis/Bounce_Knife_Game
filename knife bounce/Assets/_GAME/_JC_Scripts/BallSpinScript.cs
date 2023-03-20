@@ -10,20 +10,18 @@ public class BallSpinScript : MonoBehaviour
     public GameObject losePanel;
 
     float timer = 0;
-
     void Start()
     {
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
-        Debug.Log(timer);
 
         timer += 1 * Time.deltaTime;
 
-        if(timer >= 0 && timer <= 15)
+        if (timer >= 0 && timer <= 15)
         {
             transform.Rotate(0, 0.5f, 0);
         }
@@ -37,7 +35,6 @@ public class BallSpinScript : MonoBehaviour
         {
             transform.Rotate(0, 0.5f, 0);
         }
-
 
         if (isOver == true && knife.knifeCount == 0)
         {

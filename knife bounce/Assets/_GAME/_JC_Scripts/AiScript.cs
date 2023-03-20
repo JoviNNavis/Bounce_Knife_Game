@@ -5,16 +5,16 @@ using UnityEngine;
 public class AiScript : MonoBehaviour
 {
     public float fireRate1;
-
+    public GameObject[] knifemat;
     [SerializeField]private float fireTime1;
     [SerializeField]private float nextfireRate1;
 
     public Transform newBallPos;
-
+   // public bool isaicolor;
     public GameObject AiPalce;
-
+   public int rndclr;
     public float rankValue;
-
+   public bool aicolor;
     public GameObject Knife;
 
     void Start()
@@ -32,10 +32,12 @@ public class AiScript : MonoBehaviour
         //StartCoroutine(shoot());
     }
 
-    // Update is called once per frame
+
     void Update()
     {
         transform.Rotate(0.5f, 0, 0);
+        aicolor = FindObjectOfType<ButtonManager>().isaicolor;
+        rndclr = Random.Range(0, knifemat.Length-1);
     }
 
     IEnumerator shoot()
@@ -53,12 +55,31 @@ public class AiScript : MonoBehaviour
 
         if (fireTime1 >= nextfireRate1)
         {
-            Instantiate(Knife, transform.position, Quaternion.Euler(0, 180, 0));
-            transform.position += new Vector3(0, 0.7f, 0);
-            newBallPos.transform.position += new Vector3(0, 0.7f, 0);
-            transform.rotation = Quaternion.Euler(90, 0, 0);
-            AiPalce.transform.position += new Vector3(rankValue, 0, 0);
-            fireTime1 = 0;
+
+            if (aicolor)
+            {
+
+                GameObject aiobject = Instantiate(knifemat[rndclr-1], transform.position, Quaternion.Euler(0, 180, 0));
+                FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
+                rndclr++;
+                transform.position += new Vector3(0, 0.7f, 0);
+                newBallPos.transform.position += new Vector3(0, 0.7f, 0);
+                transform.rotation = Quaternion.Euler(90, 0, 0);
+                AiPalce.transform.position += new Vector3(rankValue, 0, 0);
+                fireTime1 = 0;
+
+            }
+            else
+            {
+                GameObject aiobject = Instantiate(Knife, transform.position, Quaternion.Euler(0, 180, 0));
+                FindObjectOfType<AiFailScript>().Knifes.Add(aiobject.gameObject.transform);
+                rndclr++;
+                transform.position += new Vector3(0, 0.7f, 0);
+                newBallPos.transform.position += new Vector3(0, 0.7f, 0);
+                transform.rotation = Quaternion.Euler(90, 0, 0);
+                AiPalce.transform.position += new Vector3(rankValue, 0, 0);
+                fireTime1 = 0;
+            }
         }
     }
 }
