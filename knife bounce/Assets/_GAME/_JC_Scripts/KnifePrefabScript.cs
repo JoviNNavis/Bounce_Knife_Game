@@ -34,7 +34,7 @@ public class KnifePrefabScript : MonoBehaviour
     {
         if (other.gameObject.CompareTag("Block") || other.gameObject.CompareTag("Finish"))
         {
-            Instantiate(drops, other.transform.position+ new Vector3(1,0,-0.4f), Quaternion.Euler(0, -270, 0));
+            Instantiate(drops, new Vector3(0.8f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
             transform.position = new Vector3(-0.581f, transform.localPosition.y, transform.localPosition.z);
             StartCoroutine(disable());
             this.enabled = false;
@@ -43,7 +43,7 @@ public class KnifePrefabScript : MonoBehaviour
         if (other.gameObject.CompareTag("AfterBall"))
         {
             other.transform.SetParent(this.transform, true);
-            transform.DOJump(new Vector3(10, 10, 10), 5, 1, 4);
+            transform.DOJump(new Vector3(10, 10, 10), 5, 1, 0.25f);
             Destroy(this.gameObject, 0.5f);
             Destroy(other.gameObject, 0.3f);
         }
