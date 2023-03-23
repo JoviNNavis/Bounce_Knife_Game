@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3944943, g: 0.8759387, b: 0.9963221, a: 1}
+  m_IndirectSpecularColor: {r: 0.39449438, g: 0.8759387, b: 0.9963221, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -6927,10 +6927,9 @@ Transform:
   m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1482162623}
   - {fileID: 431842323}
   m_Father: {fileID: 1369896589}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &150396151
 MeshRenderer:
@@ -7877,8 +7876,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1362}
-  m_SizeDelta: {x: 671.8, y: 140.4}
+  m_AnchoredPosition: {x: 0, y: -1523}
+  m_SizeDelta: {x: 1238.3, y: 380.9}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &223956588
 MonoBehaviour:
@@ -8740,7 +8739,7 @@ Transform:
   m_Children:
   - {fileID: 601645290}
   m_Father: {fileID: 1369896589}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
 --- !u!114 &280337304
 MonoBehaviour:
@@ -8754,13 +8753,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc2d6570fdcc5348919973ac357ea32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 3
+  fireRate: 3.3
   fireTime: 0
   nextfireRate: 1
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
-  spanwPosy: 25.651
+  spanwPosy: 25.655
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0
@@ -8822,7 +8821,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 61752de5e7b24b746908e6e69e189afa, type: 3}
-    m_FontSize: 70
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -8833,7 +8832,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 500
 --- !u!222 &284185182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -15824,7 +15823,7 @@ Transform:
   - {fileID: 8552722615767962417}
   - {fileID: 351788890170061532}
   m_Father: {fileID: 150396150}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &432604886
 GameObject:
@@ -16847,7 +16846,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 61752de5e7b24b746908e6e69e189afa, type: 3}
-    m_FontSize: 60
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -18414,7 +18413,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1369896589}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &620067323
 GameObject:
@@ -25474,7 +25473,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 809170300}
   m_LocalRotation: {x: 0, y: 1, z: 0, w: 0}
-  m_LocalPosition: {x: 0.581, y: 0.35, z: -0.22}
+  m_LocalPosition: {x: 0.581, y: 0.35, z: 0.22}
   m_LocalScale: {x: 1, y: 1, z: -1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -27501,7 +27500,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.042747617, y: -0, z: -0, w: 0.99908596}
-  m_LocalPosition: {x: 0, y: 2.64, z: -13.94}
+  m_LocalPosition: {x: 0, y: 27.48, z: -14.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -32747,7 +32746,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991518137}
   m_LocalRotation: {x: 0.20634222, y: -0.6842678, z: 0.2118162, w: 0.6665842}
-  m_LocalPosition: {x: -5.04, y: 29.95, z: 0.16000047}
+  m_LocalPosition: {x: -3.9199977, y: 32.480003, z: 0.16000108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -35522,7 +35521,6 @@ GameObject:
   - component: {fileID: 1218913059}
   - component: {fileID: 1218913062}
   - component: {fileID: 1218913061}
-  - component: {fileID: 1218913060}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -35550,18 +35548,6 @@ RectTransform:
   m_AnchoredPosition: {x: -40.2, y: 4}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &1218913060
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1218913058}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209f5463fce93e449822f236396ae2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!114 &1218913061
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -35584,7 +35570,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 61752de5e7b24b746908e6e69e189afa, type: 3}
-    m_FontSize: 70
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -35595,7 +35581,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 25
 --- !u!222 &1218913062
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -37691,6 +37677,7 @@ Transform:
   - {fileID: 1570535867}
   - {fileID: 2060043853693114312}
   - {fileID: 2007718617}
+  - {fileID: 1482162623}
   - {fileID: 150396150}
   - {fileID: 280337303}
   - {fileID: 1538187924}
@@ -37880,7 +37867,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1408766778
 Transform:
   m_ObjectHideFlags: 0
@@ -39450,9 +39437,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482162622}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -16.33, y: 25.3, z: -0.1}
+  m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 713768570}
@@ -39463,8 +39450,8 @@ Transform:
   - {fileID: 526551478}
   - {fileID: 1168426562}
   - {fileID: 1507046142}
-  m_Father: {fileID: 150396150}
-  m_RootOrder: 0
+  m_Father: {fileID: 1369896589}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1482162624
 MonoBehaviour:
@@ -39481,6 +39468,15 @@ MonoBehaviour:
   knife: {fileID: 280337304}
   isOver: 0
   losePanel: {fileID: 268112907}
+  Balls:
+  - {fileID: 713768570}
+  - {fileID: 624861573}
+  - {fileID: 909800085}
+  - {fileID: 968450846}
+  - {fileID: 620067324}
+  - {fileID: 526551478}
+  - {fileID: 1168426562}
+  - {fileID: 2007718617}
 --- !u!1 &1486550689
 GameObject:
   m_ObjectHideFlags: 0
@@ -45314,7 +45310,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1369896589}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546657720
 GameObject:
@@ -45470,7 +45466,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1570535866}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -1.77, y: 3.732, z: -0.087}
+  m_LocalPosition: {x: -1.77, y: 4.6, z: -0.087}
   m_LocalScale: {x: 0.75, y: 0.75, z: 0.75}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -47792,13 +47788,13 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1809528513}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -11.24, y: 31, z: 2.36}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: -16.25, y: 31.039999, z: 2.6100001}
+  m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1369896589}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1817783777
 GameObject:
@@ -47849,7 +47845,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level1: 0
   ischangecolor: 0
-  fireRate: 5
+  fireRate: 14
   knifemat:
   - {fileID: 2590846551577548752, guid: faf32c3f45cae7e468422b9647de6114, type: 3}
   - {fileID: 2590846551577548752, guid: 50af683d8e14d7248a4c0dde9e4e6fe8, type: 3}

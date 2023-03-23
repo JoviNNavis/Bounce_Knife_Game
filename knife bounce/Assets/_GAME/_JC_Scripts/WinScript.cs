@@ -43,13 +43,14 @@ public class WinScript : MonoBehaviour
             winText.SetActive(true);
             StartCoroutine(winJump());
             Destroy(text);
+            Destroy(playertarget);
         }
 
         if (other.CompareTag("AiKnife"))
         {
             isLost = true;
             aiKnife.enabled = false;
-            aitarget.SetActive(false);
+            Destroy(aitarget);
         }
 
         if (isLost == true && other.CompareTag("Knife"))
@@ -58,6 +59,9 @@ public class WinScript : MonoBehaviour
             aiKnife.enabled = false;
             lvl.SetActive(false);
             retry.SetActive(false);
+            Destroy(text);
+            Destroy(playertarget);
+            Destroy(aitarget);
             StartCoroutine(gameLost());        
         }
     }

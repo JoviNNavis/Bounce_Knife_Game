@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.3944943, g: 0.8759387, b: 0.9963221, a: 1}
+  m_IndirectSpecularColor: {r: 0.39449438, g: 0.8759387, b: 0.9963221, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -959,7 +959,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1369896589}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &91130677
 GameObject:
@@ -2176,11 +2176,10 @@ Transform:
   m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1482162623}
   - {fileID: 431842323}
   - {fileID: 761135194}
   m_Father: {fileID: 1369896589}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!23 &150396151
 MeshRenderer:
@@ -3423,7 +3422,7 @@ Transform:
   m_Children:
   - {fileID: 601645290}
   m_Father: {fileID: 1369896589}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 90, y: -180, z: 0}
 --- !u!114 &280337304
 MonoBehaviour:
@@ -3437,13 +3436,13 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc2d6570fdcc5348919973ac357ea32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 3
+  fireRate: 3.3
   fireTime: 0
   nextfireRate: 1
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
-  spanwPosy: 25.61
+  spanwPosy: 25.62
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3455,7 +3454,6 @@ GameObject:
   - component: {fileID: 284185180}
   - component: {fileID: 284185182}
   - component: {fileID: 284185181}
-  - component: {fileID: 284185183}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -3505,7 +3503,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 61752de5e7b24b746908e6e69e189afa, type: 3}
-    m_FontSize: 70
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -3516,7 +3514,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
+  m_Text: 525
 --- !u!222 &284185182
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -3525,18 +3523,6 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 284185179}
   m_CullTransparentMesh: 1
---- !u!114 &284185183
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 284185179}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209f5463fce93e449822f236396ae2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &287068859
 GameObject:
   m_ObjectHideFlags: 0
@@ -10714,7 +10700,7 @@ Transform:
   - {fileID: 8552722615767962417}
   - {fileID: 9120310657111581307}
   m_Father: {fileID: 150396150}
-  m_RootOrder: 1
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &432604886
 GameObject:
@@ -11536,7 +11522,7 @@ MonoBehaviour:
       m_Calls: []
   m_FontData:
     m_Font: {fileID: 12800000, guid: 61752de5e7b24b746908e6e69e189afa, type: 3}
-    m_FontSize: 60
+    m_FontSize: 50
     m_FontStyle: 0
     m_BestFit: 0
     m_MinSize: 0
@@ -14649,12 +14635,12 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 761135193}
   m_LocalRotation: {x: -0, y: 0.7071068, z: -0, w: 0.7071068}
-  m_LocalPosition: {x: 0.013333321, y: 19, z: 0.3983334}
+  m_LocalPosition: {x: 0.013333321, y: 18.466661, z: 0.44500002}
   m_LocalScale: {x: 25, y: 25, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 150396150}
-  m_RootOrder: 2
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &785492211
 GameObject:
@@ -15326,7 +15312,7 @@ MonoBehaviour:
   jumpPos: {fileID: 1507046142}
   playerKnife: {fileID: 1817783779}
   aiKnife: {fileID: 1920393867}
-  text: {fileID: 0}
+  text: {fileID: 1033613528}
   lostPanel: {fileID: 7732494707446415902}
   isLost: 0
 --- !u!54 &837195052
@@ -22019,7 +22005,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991518137}
   m_LocalRotation: {x: 0.20634222, y: -0.6842678, z: 0.2118162, w: 0.6665842}
-  m_LocalPosition: {x: -0.22999763, y: 32.250004, z: 0.16000108}
+  m_LocalPosition: {x: -1.4399977, y: 32.250004, z: 0.16000108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -26426,6 +26412,7 @@ Transform:
   - {fileID: 1570535867}
   - {fileID: 2060043853693114312}
   - {fileID: 2007718617}
+  - {fileID: 1482162623}
   - {fileID: 150396150}
   - {fileID: 280337303}
   - {fileID: 1538187924}
@@ -28255,9 +28242,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482162622}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -13.6, y: 25.3, z: -0.1}
+  m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 713768570}
@@ -28268,8 +28255,8 @@ Transform:
   - {fileID: 526551478}
   - {fileID: 1168426562}
   - {fileID: 1507046142}
-  m_Father: {fileID: 150396150}
-  m_RootOrder: 0
+  m_Father: {fileID: 1369896589}
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1482162624
 MonoBehaviour:
@@ -28286,6 +28273,15 @@ MonoBehaviour:
   knife: {fileID: 280337304}
   isOver: 0
   losePanel: {fileID: 4879302394055608924}
+  Balls:
+  - {fileID: 713768570}
+  - {fileID: 624861573}
+  - {fileID: 909800085}
+  - {fileID: 968450846}
+  - {fileID: 620067324}
+  - {fileID: 526551478}
+  - {fileID: 1168426562}
+  - {fileID: 2007718617}
 --- !u!1 &1486550689
 GameObject:
   m_ObjectHideFlags: 0
@@ -33738,7 +33734,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1369896589}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1546657720
 GameObject:
@@ -34103,7 +34099,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isaicolor: 0
   upForce: 500
-  level5above: 0
+  level5above: 1
 --- !u!1 &1584184990
 GameObject:
   m_ObjectHideFlags: 0
@@ -35856,7 +35852,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   level1: 0
   ischangecolor: 0
-  fireRate: 5
+  fireRate: 14
   knifemat:
   - {fileID: 2590846551577548752, guid: 50af683d8e14d7248a4c0dde9e4e6fe8, type: 3}
   - {fileID: 2590846551577548752, guid: faf32c3f45cae7e468422b9647de6114, type: 3}
@@ -57019,7 +57015,7 @@ MonoBehaviour:
   Knifes: []
   ai: {fileID: 1920393867}
   Knifeai: {fileID: 1920393865}
-  newBall: {fileID: 1505418063875595710, guid: c1258313b667e0a47b440f167e58d5e0, type: 3}
+  newBall: {fileID: 1505418063875595710, guid: fc300718fcc436c46ab5c9bed11aa525, type: 3}
   newBallPos: {fileID: 72625663}
   aiUiPos: {fileID: 349829554}
 --- !u!4 &2458678928071319926
@@ -59963,19 +59959,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 1
     m_VerticalOverflow: 1
     m_LineSpacing: 1
-  m_Text: 
---- !u!114 &4879302392928664947
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 4879302392928664949}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 209f5463fce93e449822f236396ae2f9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  m_Text: 25
 --- !u!224 &4879302392928664948
 RectTransform:
   m_ObjectHideFlags: 0
@@ -60007,7 +59991,6 @@ GameObject:
   - component: {fileID: 4879302392928664948}
   - component: {fileID: 4879302392928664945}
   - component: {fileID: 4879302392928664946}
-  - component: {fileID: 4879302392928664947}
   m_Layer: 5
   m_Name: Score
   m_TagString: Untagged
@@ -60623,8 +60606,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1362}
-  m_SizeDelta: {x: 671.8, y: 140.4}
+  m_AnchoredPosition: {x: 0, y: -1466}
+  m_SizeDelta: {x: 977, y: 276.75}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &4879302394095571005
 GameObject:

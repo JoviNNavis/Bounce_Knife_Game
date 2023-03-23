@@ -43,9 +43,9 @@ public class KnifePrefabScript : MonoBehaviour
         if (other.gameObject.CompareTag("AfterBall"))
         {
             other.transform.SetParent(this.transform, true);
-            transform.DOJump(new Vector3(10, 10, 10), 5, 1, 0.25f);
+            transform.DOJump(new Vector3(10, 10, 10), 5, 1, 1);
             Destroy(this.gameObject, 0.5f);
-            Destroy(other.gameObject, 0.3f);
+            Destroy(other.gameObject, 0.25f);
         }
     }
 

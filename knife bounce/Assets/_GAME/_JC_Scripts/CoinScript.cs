@@ -13,7 +13,7 @@ public class CoinScript : MonoBehaviour
     [SerializeField] private Quaternion[] InitialRot;
     [SerializeField] private int CoinNo;
 
-    private int CoinValue = 50;
+    private int CoinValue = 5;
     void Start()
     {
         InitialPos = new Vector3[CoinNo];
@@ -68,7 +68,7 @@ public class CoinScript : MonoBehaviour
 
         cashScript.cashValue += CoinValue;
 
-        CoinValue += 50;
+        CoinValue += 10;
     }
 
     IEnumerator coinCount(int coinNo)

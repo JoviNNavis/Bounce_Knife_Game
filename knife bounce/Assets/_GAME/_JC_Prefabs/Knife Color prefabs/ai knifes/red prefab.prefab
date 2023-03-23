@@ -193,7 +193,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 70c9992c73b670f45953aad352cc49a8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 30
+  speed: 75
   jelly: {fileID: 4038761440416954927}
 --- !u!65 &5183434124251210249
 BoxCollider:

@@ -11696,7 +11696,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ischangecolor: 0
-  fireRate: 14
+  fireRate: 8
   knifemat:
   - {fileID: 2590846551577548752, guid: faf32c3f45cae7e468422b9647de6114, type: 3}
   - {fileID: 2590846551577548752, guid: 50af683d8e14d7248a4c0dde9e4e6fe8, type: 3}
