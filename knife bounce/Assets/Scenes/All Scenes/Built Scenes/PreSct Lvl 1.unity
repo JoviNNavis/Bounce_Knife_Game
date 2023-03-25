@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.2217727, g: 0.7096865, b: 0.781853, a: 1}
+  m_IndirectSpecularColor: {r: 0.39449438, g: 0.8759387, b: 0.9963221, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -443,7 +443,7 @@ RectTransform:
   - {fileID: 1871831497}
   - {fileID: 212066013}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 13
+  m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
@@ -599,6 +599,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &25542838
@@ -773,6 +774,82 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 33691728}
+  m_CullTransparentMesh: 1
+--- !u!1 &39287469
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 39287470}
+  - component: {fileID: 39287472}
+  - component: {fileID: 39287471}
+  m_Layer: 5
+  m_Name: Alert (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &39287470
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39287469}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 861781894}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 155, y: 178.0001}
+  m_SizeDelta: {x: 230, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &39287471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39287469}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 10a0249fd2a212f4986d09a5ceae42be, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &39287472
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 39287469}
   m_CullTransparentMesh: 1
 --- !u!1 &39488337
 GameObject:
@@ -1269,6 +1346,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &102589847
@@ -1464,13 +1542,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -1576,9 +1647,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.5686275, g: 0.5686275, b: 0.5686275, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -1711,6 +1782,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &125126638
@@ -1875,7 +1947,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 2
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -2087,6 +2159,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &136021638
@@ -2140,7 +2213,7 @@ RectTransform:
   - {fileID: 871128600}
   - {fileID: 403982708}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 7
+  m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2284,6 +2357,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &139468717
@@ -2628,6 +2702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &184650731
@@ -2890,6 +2965,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &214004674
@@ -3019,6 +3095,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &215796299
@@ -3494,6 +3571,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &244710616
@@ -3644,6 +3722,7 @@ MonoBehaviour:
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
+  spanwPosy: 0
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0
@@ -3835,6 +3914,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &287068865
@@ -9105,9 +9185,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 0.5660378, g: 0.5660378, b: 0.5660378, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -9608,6 +9688,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &355278957
@@ -9940,7 +10021,7 @@ RectTransform:
   - {fileID: 377122309}
   - {fileID: 2032738902}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 9
+  m_RootOrder: 10
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -10058,6 +10139,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &372013896
@@ -10225,6 +10307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &376242217
@@ -10642,6 +10725,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &394020359
@@ -11322,6 +11406,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &443813831
@@ -11675,13 +11760,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerKnife: {fileID: 0}
+  water: {fileID: 0}
   knifePlayer2: {fileID: 0}
+  changecolor: 0
+  isaicolor: 0
+  ai: {fileID: 0}
   cam: {fileID: 138320296}
   button: {fileID: 1813662}
   playButon: {fileID: 1205800475}
   rewardPanel: {fileID: 364440460}
   levelPanel: {fileID: 1628282492}
   chestPanel: {fileID: 0}
+  ChestlosePanel: {fileID: 0}
+  countdownPanel: {fileID: 0}
   bonusKnife: {fileID: 0}
   up: {fileID: 0}
   newPanel1: {fileID: 0}
@@ -12008,7 +12099,7 @@ RectTransform:
   - {fileID: 1631777860}
   - {fileID: 1347281034}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 6
+  m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -12260,6 +12351,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &526831224
@@ -12389,6 +12481,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &542384572
@@ -12518,6 +12611,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &547279676
@@ -12742,7 +12836,7 @@ GameObject:
   - component: {fileID: 587781871}
   - component: {fileID: 587781870}
   m_Layer: 5
-  m_Name: Console
+  m_Name: ConsoleButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12998,13 +13092,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -13411,6 +13498,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &610058331
@@ -14073,6 +14161,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &667706452
@@ -14202,6 +14291,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &674860705
@@ -14759,6 +14849,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &722296484
@@ -15307,7 +15398,7 @@ RectTransform:
   m_Children:
   - {fileID: 1462537525}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 3
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
@@ -15640,10 +15731,15 @@ MonoBehaviour:
   winText: {fileID: 525053811}
   lvl: {fileID: 811027089}
   retry: {fileID: 127480848}
+  playertarget: {fileID: 0}
+  aitarget: {fileID: 0}
   newBall: {fileID: 2007718616}
   jumpPos: {fileID: 1507046142}
   playerKnife: {fileID: 1817783779}
   aiKnife: {fileID: 1920393867}
+  text: {fileID: 0}
+  lostPanel: {fileID: 0}
+  isLost: 0
 --- !u!54 &837195052
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -15771,6 +15867,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &843430518
@@ -15960,7 +16057,7 @@ GameObject:
   - component: {fileID: 861781896}
   - component: {fileID: 861781895}
   m_Layer: 5
-  m_Name: Knife
+  m_Name: ToolButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -15979,6 +16076,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1502361412}
+  - {fileID: 39287470}
   m_Father: {fileID: 212066013}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -16192,6 +16290,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &868486825
@@ -17219,6 +17318,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &950246487
@@ -22475,13 +22575,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -22601,6 +22694,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1000735543
@@ -23107,6 +23201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1027952012
@@ -23155,7 +23250,7 @@ RectTransform:
   m_Children:
   - {fileID: 612732441}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 12
+  m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -23539,6 +23634,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1077962257
@@ -24216,7 +24312,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
@@ -24431,7 +24527,7 @@ GameObject:
   - component: {fileID: 1166371223}
   - component: {fileID: 1166371222}
   m_Layer: 5
-  m_Name: Knife (1)
+  m_Name: KnifeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -24451,6 +24547,7 @@ RectTransform:
   m_Children:
   - {fileID: 334370800}
   - {fileID: 1889442378}
+  - {fileID: 1403388172}
   m_Father: {fileID: 212066013}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -24473,9 +24570,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -24798,6 +24895,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1176789033
@@ -25088,7 +25186,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 4
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -25300,6 +25398,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1207738566
@@ -25381,13 +25480,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -25604,6 +25696,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1253692808
@@ -26028,6 +26121,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1314735135
@@ -26385,6 +26479,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1340237158
@@ -26660,6 +26755,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1813663}
+  - {fileID: 20370521}
   - {fileID: 1130047089}
   - {fileID: 127480849}
   - {fileID: 811027090}
@@ -26672,7 +26768,6 @@ RectTransform:
   - {fileID: 1628282493}
   - {fileID: 1925368878}
   - {fileID: 1033613529}
-  - {fileID: 20370521}
   m_Father: {fileID: 1409726299}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -26950,6 +27045,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1367851027
@@ -27153,6 +27249,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1380973988
@@ -27171,6 +27268,82 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 112
   m_CollisionDetection: 0
+--- !u!1 &1403388171
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1403388172}
+  - component: {fileID: 1403388174}
+  - component: {fileID: 1403388173}
+  m_Layer: 5
+  m_Name: Alert
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1403388172
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403388171}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1166371220}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 153, y: 178}
+  m_SizeDelta: {x: 230, y: 200}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1403388173
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403388171}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 0
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 0
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 21300000, guid: 10a0249fd2a212f4986d09a5ceae42be, type: 3}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &1403388174
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1403388171}
+  m_CullTransparentMesh: 1
 --- !u!1 &1408766777
 GameObject:
   m_ObjectHideFlags: 0
@@ -27234,13 +27407,6 @@ MonoBehaviour:
     LensShift: {x: 0, y: 0}
     GateFit: 2
     m_SensorSize: {x: 1, y: 1}
-    Iso: 200
-    ShutterSpeed: 0.005
-    Aperture: 16
-    BladeCount: 5
-    Curvature: {x: 2, y: 11}
-    BarrelClipping: 0.25
-    Anamorphism: 0
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -27807,6 +27973,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1436495818
@@ -27936,6 +28103,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1443066546
@@ -28141,6 +28309,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1451514158
@@ -28350,6 +28519,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1457399702
@@ -28560,6 +28730,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1468424641
@@ -28790,6 +28961,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 89cc06f149e7d3a4fab880834dc4e0f6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  knife: {fileID: 0}
+  isOver: 0
+  losePanel: {fileID: 0}
+  Balls: []
 --- !u!1 &1486550689
 GameObject:
   m_ObjectHideFlags: 0
@@ -28918,7 +29093,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e116e0209d0517e4c80d1d0d82358aed, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  knife: {fileID: 1817783779}
   upForce: 500
 --- !u!96 &1486550696
 TrailRenderer:
@@ -29139,6 +29313,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1499662639
@@ -29209,9 +29384,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -34167,6 +34342,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1520943190
@@ -34653,7 +34829,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4aa6ad59d61c8c84484c526af766ef4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  isaicolor: 0
   upForce: 500
+  level5above: 0
 --- !u!1 &1584184990
 GameObject:
   m_ObjectHideFlags: 0
@@ -35191,7 +35369,7 @@ RectTransform:
   - {fileID: 990866699}
   - {fileID: 2022752182}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -35466,6 +35644,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1644145689
@@ -36062,6 +36241,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1762525655
@@ -36132,9 +36312,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -36478,17 +36658,20 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2559a5f5d38f39c448eff33648ed77bc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  level1: 0
+  ischangecolor: 0
   fireRate: 8
+  knifemat: []
   fireTime: 0
   nextfireRate: 1
   knife: {fileID: 2590846551577548752, guid: 39cb3fbf5d4a3204193067cfa5a9c73b, type: 3}
   PlayerRank: {fileID: 1546657720}
   newBallPos: {fileID: 1538187924}
   playerImg: {fileID: 50878900}
+  playerchangecolor: 0
   fillValue: 0.032
   rankValue: 13
   counterText: {fileID: 1033613528}
-  ais: {fileID: 1920393867}
 --- !u!1 &1828264437
 GameObject:
   m_ObjectHideFlags: 0
@@ -36600,6 +36783,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1828264443
@@ -36843,7 +37027,7 @@ RectTransform:
   - {fileID: 14972585}
   - {fileID: 511800751}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 5
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
@@ -36862,7 +37046,7 @@ GameObject:
   - component: {fileID: 1879804017}
   - component: {fileID: 1879804016}
   m_Layer: 5
-  m_Name: Lock
+  m_Name: LockButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -36904,9 +37088,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -37039,6 +37223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1880027713
@@ -37109,9 +37294,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -37340,11 +37525,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   fireRate1: 1
+  knifemat: []
   fireTime1: 2
   nextfireRate1: 2
   newBallPos: {fileID: 0}
   AiPalce: {fileID: 349829554}
+  rndclr: 0
   rankValue: 12.5
+  aicolor: 0
   Knife: {fileID: 2590846551577548752, guid: b1df1881c2835ee4ea799456e4a9c975, type: 3}
 --- !u!1 &1925368877
 GameObject:
@@ -37377,7 +37565,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 11
+  m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -37753,6 +37941,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1944034907
@@ -37882,6 +38071,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &1954832368
@@ -38013,7 +38203,7 @@ GameObject:
   - component: {fileID: 1983058583}
   - component: {fileID: 1983058582}
   m_Layer: 5
-  m_Name: Image
+  m_Name: BlueBg
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -38263,6 +38453,7 @@ MonoBehaviour:
   KnifePlayer: {fileID: 1817783777}
   newBall: {fileID: 2857406669346811751, guid: cbdaac8ee8426b3469b5c062c5869c93, type: 3}
   newBallPos: {fileID: 1538187924}
+  puntured_ball: {fileID: 0}
   playerUiPos: {fileID: 1546657720}
   playerImg: {fileID: 50878900}
 --- !u!1 &2007718616
@@ -38837,6 +39028,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &2058135863
@@ -38970,7 +39162,7 @@ RectTransform:
   - {fileID: 1809337181}
   - {fileID: 1627062617}
   m_Father: {fileID: 1360056039}
-  m_RootOrder: 8
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -39155,6 +39347,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c39da530a81250748a7ceb2cb6546a00, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  blast: {fileID: 0}
   stacks: {fileID: 431842322}
   stackCount: 50
 --- !u!54 &2092528839
