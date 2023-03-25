@@ -163,7 +163,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: 4, y: 2176}
-  m_SizeDelta: {x: 1943.9, y: 5000}
+  m_SizeDelta: {x: 1943.9, y: 3060}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1813664
 MonoBehaviour:
@@ -2172,7 +2172,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150396149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -13.6, y: 25.3, z: -0.1}
+  m_LocalPosition: {x: -13.6, y: 30.03, z: -0.1}
   m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3416,7 +3416,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280337302}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -5.89, y: 25.61, z: 0}
+  m_LocalPosition: {x: -5.89, y: 30.340002, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -11381,6 +11381,7 @@ MonoBehaviour:
   arrow: {fileID: 0}
   oldImg: {fileID: 0}
   newImg: {fileID: 0}
+  redAlert: {fileID: 933205569}
 --- !u!1 &508017724
 GameObject:
   m_ObjectHideFlags: 0
@@ -16850,9 +16851,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -22408,7 +22409,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 991518137}
   m_LocalRotation: {x: 0.20634222, y: -0.6842678, z: 0.2118162, w: 0.6665842}
-  m_LocalPosition: {x: -1.4399977, y: 32.250004, z: 0.16000108}
+  m_LocalPosition: {x: -1.4399977, y: 36.980003, z: 0.16000108}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -28646,7 +28647,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1482162622}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -13.6, y: 25.3, z: -0.1}
+  m_LocalPosition: {x: -13.6, y: 30.03, z: -0.1}
   m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -75800,7 +75801,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7098834492927535630}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 500573944}
+        m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
+        m_MethodName: knifeSkin
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &7098834492927535630
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -76045,7 +76058,7 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 7098834493173442980}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: -284}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -76323,9 +76336,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
@@ -76684,9 +76697,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
+  m_RaycastTarget: 0
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
+  m_Maskable: 0
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []

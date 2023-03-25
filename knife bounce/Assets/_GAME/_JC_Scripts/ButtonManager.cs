@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
@@ -24,6 +25,8 @@ public class ButtonManager : MonoBehaviour
     public GameObject newPanel1, newPanel2;
 
     public GameObject arrow, oldImg, newImg;
+
+    public Image redAlert;
 
     void Start()
     {
@@ -152,6 +155,11 @@ public class ButtonManager : MonoBehaviour
     }
 
 
+    public void knifeSkin()
+    {
+        Color color = new Color(255, 255, 255, 0);
+        redAlert.color = color;
+    }
 
     public void nextLvl()
     {
