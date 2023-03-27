@@ -7,7 +7,6 @@ public class WinScript1 : MonoBehaviour
 {
     public GameObject blast, winText;
     public GameObject lvl, retry;
-    public GameObject target, KnifeText;
 
     public KnifeScript1 playerKnife;
 
@@ -27,8 +26,6 @@ public class WinScript1 : MonoBehaviour
         if(other.CompareTag("Knife"))
         {
             playerKnife.enabled = false;
-            Destroy(target);
-            Destroy(KnifeText);
             lvl.SetActive(false);
             retry.SetActive(false);
             blast.SetActive(true);

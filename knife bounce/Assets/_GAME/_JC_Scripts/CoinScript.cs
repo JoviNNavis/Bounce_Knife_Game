@@ -13,9 +13,12 @@ public class CoinScript : MonoBehaviour
     [SerializeField] private Quaternion[] InitialRot;
     [SerializeField] private int CoinNo;
 
-    private int CoinValue = 5;
+    private int CoinValue;
+
     void Start()
     {
+        CoinValue = 50;
+
         InitialPos = new Vector3[CoinNo];
         InitialRot = new Quaternion[CoinNo];
 

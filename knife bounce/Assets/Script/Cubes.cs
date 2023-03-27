@@ -19,7 +19,7 @@ public class Cubes : MonoBehaviour
     {
         cube = GetComponent <MeshRenderer>();
         health = 100;
-        before = cube.material;
+        cube.material = before;
         
     }
     private void OnTriggerEnter(Collider other)

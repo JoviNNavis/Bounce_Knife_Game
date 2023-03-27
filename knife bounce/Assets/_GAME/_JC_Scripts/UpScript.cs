@@ -18,4 +18,12 @@ public class UpScript : MonoBehaviour
         transform.position += new Vector3(0, upValue, 0) * Time.deltaTime;
         coinPos.transform.position += new Vector3(0, upValue, 0) * Time.deltaTime;
     }
+
+    private void OnTriggerEnter(Collider other)
+    {
+        if(other.CompareTag("Finish"))
+        {
+            this.enabled = false;
+        }
+    }
 }

@@ -19,10 +19,6 @@ public class Ballpowerup : MonoBehaviour
         {
             time = 0;
         }
-        if (collision.gameObject.CompareTag("AiBall"))
-        {
-            time = 0;
-        }
     }
     private void OnTriggerEnter(Collider other)
     {

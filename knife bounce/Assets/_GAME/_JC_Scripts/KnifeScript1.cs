@@ -9,12 +9,12 @@ public class KnifeScript1 : MonoBehaviour
     private bool isTouch;
 
     private bool isRelease = false;
-    public bool ischangecolor;
+
     public float fireRate;
-    public GameObject[] knifemat;
+
     [SerializeField] private float fireTime;
     [SerializeField] private float nextfireRate;
-    int randcolors;
+
     public Transform newBallPos;
     public GameObject knife;
     public GameObject PlayerRank;
@@ -24,6 +24,8 @@ public class KnifeScript1 : MonoBehaviour
 
     public GameObject countText;
 
+    public FailScript fail;
+
     void Start()
     {
 
@@ -32,7 +34,6 @@ public class KnifeScript1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        ischangecolor = FindObjectOfType<ButtonManager>().changecolor;
         transform.Rotate(0.5f, 0, 0);
         if (Input.GetMouseButton(0))
         {
@@ -72,32 +73,13 @@ public class KnifeScript1 : MonoBehaviour
 
         if (fireTime >= nextfireRate)
         {
-            if (ischangecolor)
-            {
-                GameObject _knife =  Instantiate(knifemat[randcolors], transform.position, Quaternion.identity);
-                FindObjectOfType<FailScript>().Knifes.Add(_knife.gameObject.transform);
-
-                randcolors++;
-                newBallPos.transform.position += new Vector3(0, 0.7f, 0);
-                transform.position += new Vector3(0, 0.7f, 0);
-                transform.rotation = Quaternion.Euler(90, -180, 0);
-                playerImg.fillAmount += rankValue;
-                fireTime = 0;
-                if (randcolors >= knifemat.Length)
-                {
-                    randcolors = 0;
-                }
-            }
-            else
-            {
-                GameObject _knife =  Instantiate(knife, transform.position, Quaternion.identity);
-                FindObjectOfType<FailScript>().Knifes.Add(_knife.gameObject.transform);
-                newBallPos.transform.position += new Vector3(0, 0.7f, 0);
-                transform.position += new Vector3(0, 0.7f, 0);
-                transform.rotation = Quaternion.Euler(90, -180, 0);
-                playerImg.fillAmount += rankValue;
-                fireTime = 0;
-            }
+            Instantiate(knife, transform.position, Quaternion.identity);
+            //fail.Knifes.Add(transform);
+            newBallPos.transform.position += new Vector3(0, 0.7f, 0);
+            transform.position += new Vector3(0, 0.7f, 0);
+            transform.rotation = Quaternion.Euler(90, -180, 0);
+            playerImg.fillAmount += rankValue;
+            fireTime = 0;
         }
     }
 

@@ -2,7 +2,6 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-
 public class AiknifePrefab : MonoBehaviour
 {
     public float speed;
@@ -18,8 +17,7 @@ public class AiknifePrefab : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position += new Vector3(0.4f, 0, 0) * speed * Time.deltaTime;
-       
+        transform.position += new Vector3(1, 0, 0) * speed * Time.deltaTime;
     }
 
     private void OnTriggerEnter(Collider other)
@@ -27,8 +25,7 @@ public class AiknifePrefab : MonoBehaviour
         if (other.gameObject.CompareTag("Block") || other.gameObject.CompareTag("Finish"))
         {
             transform.position = new Vector3(0.581f, transform.localPosition.y, transform.localPosition.z);
-
-           StartCoroutine(disable());
+            StartCoroutine(disable());
             this.enabled = false;
         }
 

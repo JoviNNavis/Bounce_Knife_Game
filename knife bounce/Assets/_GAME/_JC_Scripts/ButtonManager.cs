@@ -1,22 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 public class ButtonManager : MonoBehaviour
 {
     public KnifeScript1 playerKnife;
-    public MeshRenderer water;
+
     public KnifeScript knifePlayer2;
-    public bool changecolor;
-    public bool isaicolor;
+
     public AiScript ai;
 
     public GameObject cam, button, playButon;
 
-    public GameObject rewardPanel, levelPanel, chestPanel, ChestlosePanel, countdownPanel;
+    public GameObject rewardPanel, levelPanel, chestPanel, ChestlosePanel, countdownPanel, SculptPanel, knifeSkniPanel;
 
     public BonusKnifeScript bonusKnife;
 
@@ -26,7 +24,13 @@ public class ButtonManager : MonoBehaviour
 
     public GameObject arrow, oldImg, newImg;
 
-    public Image redAlert;
+    public alertScript alert;
+
+    public GameObject defaultScroll, VIPScroll;
+
+    public GameObject uiBar, Room, ShowCase;
+
+    public Transform Dirlight;
 
     void Start()
     {
@@ -39,32 +43,48 @@ public class ButtonManager : MonoBehaviour
         
     }
 
-    public void gameStart1()
+    public void gameStart1()  //lvl 1
     {
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton1());
     }
 
-    public void gameStart11()
-    {
-        cam.SetActive(false);
-        button.gameObject.SetActive(false);
-        StartCoroutine(playButton11());
-    }
-
-    public void gameStart2()
+    public void gameStart2()  //lvl 2
     {
         cam.SetActive(false);
         button.gameObject.SetActive(true);
         StartCoroutine(playButton2());
     }
 
-    public void gameStart3()
+    public void gameStart11()   // lvl 3 to lvl 5
+    {
+        cam.SetActive(false);
+        button.gameObject.SetActive(false);
+        StartCoroutine(playButton11());
+    }
+
+    public void gameStart3()  //bonus lvl
     {
         cam.SetActive(false);
         button.gameObject.SetActive(false);
         StartCoroutine(playButton1());
+    }
+
+    public void gameStart4()   // lvl 7
+    {
+        cam.SetActive(false);
+        SculptPanel.gameObject.SetActive(false);
+        button.gameObject.SetActive(true);  
+        StartCoroutine(playButton2());
+    }
+
+    public void gameStart5()   // lvl 8 to lvl 10
+    {
+        cam.SetActive(false);
+        button.gameObject.SetActive(false);
+        SculptPanel.gameObject.SetActive(false);
+        StartCoroutine(playButton11());
     }
 
     public void Bonus()
@@ -123,6 +143,61 @@ public class ButtonManager : MonoBehaviour
         countdownPanel.SetActive(true);
     }
 
+    public void nextLvl()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+    }
+
+    public void KnifeSkin()
+    {
+        alert.changeColor();
+        knifeSkniPanel.SetActive(true);
+        Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
+        ShowCase.SetActive(false);
+    }
+
+    public void defaultKnife()
+    {
+        defaultScroll.SetActive(true);
+        VIPScroll.SetActive(false);
+    }
+
+    public void VIPknife()
+    {
+        VIPScroll.SetActive(true);
+        defaultScroll.SetActive(false);
+    }
+
+    public void consoleButton()
+    {
+        knifeSkniPanel.SetActive(false);
+        Room.SetActive(false);
+        uiBar.SetActive(true);
+        cam.gameObject.SetActive(true);
+        ShowCase.SetActive(false);
+        Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
+    }
+
+    public void EnableSculptRoom()
+    {
+        Room.SetActive(true);
+        uiBar.SetActive(false);
+        cam.gameObject.SetActive(false);
+        Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
+        ShowCase.SetActive(false);
+        knifeSkniPanel.SetActive(false);
+    }
+
+    public void statueRoom()
+    {
+        Dirlight.transform.rotation = Quaternion.Euler(160, -30, 0);
+        cam.gameObject.SetActive(false);
+        uiBar.SetActive(false);
+        ShowCase.SetActive(true);
+        Room.SetActive(false);
+        knifeSkniPanel.SetActive(false);
+
+    }
     IEnumerator playButton1()
     {
         yield return new WaitForSeconds(2f);
@@ -152,18 +227,6 @@ public class ButtonManager : MonoBehaviour
         bonusKnife.enabled = true;
         up.enabled = true;
         //playButon.SetActive(true);
-    }
-
-
-    public void knifeSkin()
-    {
-        Color color = new Color(255, 255, 255, 0);
-        redAlert.color = color;
-    }
-
-    public void nextLvl()
-    {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
 
 }

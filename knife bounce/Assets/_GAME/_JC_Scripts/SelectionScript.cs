@@ -15,7 +15,7 @@ public class SelectionScript : MonoBehaviour
 
     void Start()
     {
-        baner1.transform.DOMoveX(Screen.width/2, 0.5f, false).SetEase(Ease.InOutSine);
+        baner1.transform.DOMoveX(550, 0.5f, false).SetEase(Ease.InOutSine);
         StartCoroutine(selection());
     }
 
@@ -28,7 +28,7 @@ public class SelectionScript : MonoBehaviour
     IEnumerator selection()
     {
         yield return new WaitForSeconds(1f);
-        baner2.transform.DOMoveX(Screen.width / 2, 0.5f, false).SetEase(Ease.InOutSine);
+        baner2.transform.DOMoveX(550, 0.5f, false).SetEase(Ease.InOutSine);
         yield return new WaitForSeconds(0.09f);
         names[0].SetActive(false);
         names[1].SetActive(true);

@@ -32,7 +32,7 @@ public class cammovement : MonoBehaviour
         {
              if ((cam.transform.localEulerAngles.x < xaxis-20))
             {
-                cam.transform.eulerAngles = new Vector3(xaxis - 19.95f, cam.transform.localEulerAngles.y, 3);
+                cam.transform.eulerAngles = new Vector3(xaxis - 19.95f, cam.transform.localEulerAngles.y, 0);
      
             }
 
@@ -40,7 +40,7 @@ public class cammovement : MonoBehaviour
             
             else if ((cam.transform.localEulerAngles.x > xaxis + 7) )
             {
-                cam.transform.eulerAngles = new Vector3(xaxis + 6.95f, cam.transform.localEulerAngles.y, 3);
+                cam.transform.eulerAngles = new Vector3(xaxis + 6.95f, cam.transform.localEulerAngles.y, 0);
              
             }
         }

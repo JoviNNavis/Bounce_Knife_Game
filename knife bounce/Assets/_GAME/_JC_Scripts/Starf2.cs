@@ -11,7 +11,6 @@ public class Starf2 : MonoBehaviour
     void Start()
     {
         StartCoroutine(starf());
-        meshCol = GetComponent<MeshCollider>();
     }
 
     // Update is called once per frame
