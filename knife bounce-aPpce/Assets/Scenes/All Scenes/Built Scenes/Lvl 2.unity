@@ -10704,7 +10704,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280337302}
   m_LocalRotation: {x: -0.000000031043193, y: -0.7040148, z: 0.7101854, w: -0.000000030773464}
-  m_LocalPosition: {x: -8.61, y: 26.86, z: 0.28}
+  m_LocalPosition: {x: -8.61, y: 26.86, z: 0.234}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -10732,7 +10732,7 @@ MonoBehaviour:
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
-  spanwPosy: 25.651
+  spanwPosy: 25.675
 --- !u!1 &280777336
 GameObject:
   m_ObjectHideFlags: 0
@@ -21752,9 +21752,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547279670}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.2499999, z: 0}
+  m_LocalScale: {x: 0.2, y: 0.49999997, z: 0.20000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 431842323}

@@ -136,7 +136,7 @@ public class NewBallScript : MonoBehaviour
              
                 StartCoroutine(poweranimations());
 
-                Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
+              Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
                
               if(FindObjectOfType<ColorScript>().spikelevel)
                 {

@@ -3677,6 +3677,7 @@ GameObject:
   - component: {fileID: 150396152}
   - component: {fileID: 150396151}
   - component: {fileID: 150396153}
+  - component: {fileID: 150396154}
   m_Layer: 0
   m_Name: Cylinder
   m_TagString: Open
@@ -3692,7 +3693,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 150396149}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -15.72, y: 50.77, z: -0.1}
+  m_LocalPosition: {x: -18.21, y: 50.77, z: 3.69}
   m_LocalScale: {x: 6, y: 0.3, z: 6}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -3761,11 +3762,24 @@ MeshCollider:
   m_GameObject: {fileID: 150396149}
   m_Material: {fileID: 0}
   m_IsTrigger: 0
-  m_Enabled: 1
+  m_Enabled: 0
   serializedVersion: 4
   m_Convex: 1
   m_CookingOptions: 30
   m_Mesh: {fileID: 10206, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!65 &150396154
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 150396149}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1.0000001, y: 1.9999999, z: 1.0000002}
+  m_Center: {x: 0.000000059604645, y: 0, z: -0.00000008940697}
 --- !u!1 &167675544
 GameObject:
   m_ObjectHideFlags: 0
@@ -6636,7 +6650,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 280337302}
   m_LocalRotation: {x: 0, y: -0.7071068, z: 0.7071068, w: 0}
-  m_LocalPosition: {x: -8.21, y: 51.08, z: 0}
+  m_LocalPosition: {x: -10.7, y: 51.226, z: 3.79}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -6656,7 +6670,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2cc2d6570fdcc5348919973ac357ea32, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  fireRate: 3
+  fireRate: 2.5
   level: 0
   fireTime: 0
   nextfireRate: 0
@@ -6664,7 +6678,7 @@ MonoBehaviour:
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
-  spanwPosy: 51.08
+  spanwPosy: 51.175
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0
@@ -14948,7 +14962,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &431842323
 Transform:
   m_ObjectHideFlags: 0
@@ -14957,7 +14971,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 431842322}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0.1, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -17903,9 +17917,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 547279670}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.25, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 1.2499958, z: 0}
+  m_LocalScale: {x: 0.20000002, y: 0.49999997, z: 0.20000002}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 431842323}
@@ -18003,7 +18017,7 @@ Rigidbody:
   m_UseGravity: 0
   m_IsKinematic: 0
   m_Interpolate: 0
-  m_Constraints: 112
+  m_Constraints: 122
   m_CollisionDetection: 0
 --- !u!1 &550971678
 GameObject:
@@ -41283,7 +41297,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1295111360}
-  - component: {fileID: 1295111361}
   m_Layer: 0
   m_Name: CubePath (1)
   m_TagString: Untagged
@@ -41442,32 +41455,6 @@ Transform:
   m_Father: {fileID: 203852508}
   m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1295111361
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1295111359}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: cea7c8c1e6b7a63458c2fd6f0adae590, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  belowlevel5: 1
-  spikelevel: 0
-  original: {fileID: 0}
-  up_color_level5: {r: 0, g: 0, b: 0, a: 0}
-  down_color_level5: {r: 0, g: 0, b: 0, a: 0}
-  up_color_level1: {r: 0, g: 0, b: 0, a: 0}
-  down_color_level1: {r: 0, g: 0, b: 0, a: 0}
-  up: {fileID: 2100000, guid: 92a32fa6c7159a348adc03a271ab64db, type: 2}
-  down: {fileID: 2100000, guid: 43817f91b1cc90b4497045d22e785e8a, type: 2}
-  spikemat: {fileID: 0}
-  beforecolor: {r: 0, g: 0, b: 0, a: 0}
-  aftercolor: {r: 0, g: 0, b: 0, a: 0}
-  fog: {r: 0, g: 0, b: 0, a: 0}
-  after_fog: {r: 0, g: 0, b: 0, a: 0}
 --- !u!1 &1311913630
 GameObject:
   m_ObjectHideFlags: 0
