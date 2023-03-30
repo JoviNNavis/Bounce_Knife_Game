@@ -13,6 +13,8 @@ public class SpikeBallScript : MonoBehaviour
     public TrailRenderer tail;
     private Rigidbody Rb;
 
+    public Animator camAnim;
+
     void Start()
     {
         RenderSettings.skybox = skybox;
@@ -41,6 +43,7 @@ public class SpikeBallScript : MonoBehaviour
         {
             if (FindObjectOfType<Ballpowerup>().time < 0.35f)
             {
+                camAnim.SetBool("Move", true);
                 FindObjectOfType<ButtonManager>().changecolor = true;
                 RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
 
@@ -60,6 +63,7 @@ public class SpikeBallScript : MonoBehaviour
                 _fire.Pause();
                 _fire.Clear();
 
+                camAnim.SetBool("Move", false);
                 powerup_mode = false;
                 FindObjectOfType<ButtonManager>().changecolor = false;
                 RenderSettings.fogColor = FindObjectOfType<ColorScript>().fog;

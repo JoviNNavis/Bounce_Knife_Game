@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 using DG.Tweening;
+using Cinemachine;
 
 public class NewBallScript : MonoBehaviour
 {
@@ -17,6 +18,10 @@ public class NewBallScript : MonoBehaviour
     public bool changecolor;
     public TrailRenderer tail;
     private Rigidbody Rb;
+
+    public Animator camAnim;
+
+    public KnifeScript knife;
     
 
     private MeshRenderer _knife;
@@ -128,7 +133,7 @@ public class NewBallScript : MonoBehaviour
         {
             if (FindObjectOfType<Ballpowerup>().time < 0.3f)
             {
-
+                camAnim.SetBool("Move", true);
               FindObjectOfType<ButtonManager>().changecolor = true;
               
                 float _newUpforce = upForce + 150;
@@ -161,6 +166,7 @@ public class NewBallScript : MonoBehaviour
                 _fire.Pause();
                 _fire.Clear();
 
+                camAnim.SetBool("Move", false);
                 powerup_mode = false;
                 FindObjectOfType<ButtonManager>().changecolor = false;
 

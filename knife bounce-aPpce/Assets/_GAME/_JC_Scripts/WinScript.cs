@@ -13,7 +13,7 @@ public class WinScript : MonoBehaviour
 
     public KnifeScript playerKnife;
     public AiScript aiKnife;
-    public GameObject text;
+    public GameObject text, target;
     public GameObject lostPanel;
 
     public bool isLost = false;
@@ -37,12 +37,13 @@ public class WinScript : MonoBehaviour
             FindObjectOfType<KnifeScript>().counterText.SetActive(false);
             FindObjectOfType<NewBallScript>().islevelcompleted = true;
             FindObjectOfType<NewBallScript>().stopwatercolor();
-         aiKnife.enabled = false;
+            aiKnife.enabled = false;
             lvl.SetActive(false);
             blast.SetActive(true);
             winText.SetActive(true);
             StartCoroutine(winJump());
             Destroy(text);
+            Destroy(target);
         }
 
         if (other.CompareTag("AiKnife"))
@@ -57,6 +58,8 @@ public class WinScript : MonoBehaviour
             aiKnife.enabled = false;
             lvl.SetActive(false);
             retry.SetActive(false);
+            Destroy(text);
+            Destroy(target);
             StartCoroutine(gameLost());        
         }
     }

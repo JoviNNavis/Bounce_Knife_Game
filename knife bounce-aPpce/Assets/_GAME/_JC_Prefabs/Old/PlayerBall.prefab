@@ -250,12 +250,12 @@ MonoBehaviour:
   upForce: 500
   powerup_mode: 0
   _fire: {fileID: 7447238551728610824}
-  skyboxbefore5: {fileID: 2100000, guid: bbbcd551076325545ba102ba8c308520, type: 2}
-  skyboxafter5: {fileID: 2100000, guid: e0bca20dd400c2940a1c2c42c3ae10c4, type: 2}
+  skyboxbefore: {fileID: 0}
   skybox2: {fileID: 2100000, guid: b4d1e1180d6b45d4eaa6f6b684d18e2b, type: 2}
   islevelcompleted: 0
   changecolor: 0
   tail: {fileID: 2857406669346811758}
+  camAnim: {fileID: 4056342948515322414, guid: da7badd321b15394988a9a39e1d82058, type: 3}
   _blue: {r: 0, g: 0, b: 0, a: 0}
   purple: {r: 0, g: 0, b: 0, a: 0}
   abovelevel5: 0
