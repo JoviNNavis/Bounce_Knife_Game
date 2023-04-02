@@ -10101,6 +10101,8 @@ MonoBehaviour:
   islevelcompleted: 0
   changecolor: 0
   tail: {fileID: 872044070}
+  camAnim: {fileID: 1228945780}
+  knife: {fileID: 0}
   _blue: {r: 0, g: 0, b: 0, a: 0}
   purple: {r: 0, g: 0, b: 0, a: 0}
   abovelevel5: 0
@@ -14404,6 +14406,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1228945778}
   - component: {fileID: 1228945779}
+  - component: {fileID: 1228945780}
   m_Layer: 0
   m_Name: Cam 2
   m_TagString: Untagged
@@ -14465,6 +14468,26 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 1751831326}
+--- !u!95 &1228945780
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228945777}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85e0f0c7643f68e4aba1bc2291383d7d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1235320941
 GameObject:
   m_ObjectHideFlags: 0

@@ -36,6 +36,7 @@ public class KnifeScript1 : MonoBehaviour
         transform.Rotate(0.5f, 0, 0);
         if (Input.GetMouseButton(0))
         {
+            countText.SetActive(true);
             Shooting();
         }
         else
@@ -69,7 +70,7 @@ public class KnifeScript1 : MonoBehaviour
 
     void Shooting()
     {
-        countText.SetActive(true);
+     
         fireTime += Time.deltaTime;
         nextfireRate = 1 / fireRate;
 

@@ -31,6 +31,7 @@ public class ColorScript : MonoBehaviour
         aftercolor = new Color32(168, 255, 133, 180);
         spikemat.color = beforecolor;
         spikelevel = false;
+        RenderSettings.fogColor = fog;
     }
 
    

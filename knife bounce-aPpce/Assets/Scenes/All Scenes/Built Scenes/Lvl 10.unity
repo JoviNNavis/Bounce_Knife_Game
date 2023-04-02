@@ -24192,6 +24192,7 @@ MonoBehaviour:
   playerKnife: {fileID: 1817783779}
   aiKnife: {fileID: 1920393867}
   text: {fileID: 0}
+  target: {fileID: 0}
   lostPanel: {fileID: 5830666582127998942}
   isLost: 0
 --- !u!54 &837195052
@@ -34353,6 +34354,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1408766778}
   - component: {fileID: 1408766779}
+  - component: {fileID: 1408766780}
   m_Layer: 0
   m_Name: Cam 2
   m_TagString: Untagged
@@ -34414,6 +34416,26 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_ComponentOwner: {fileID: 212101255}
+--- !u!95 &1408766780
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1408766777}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 85e0f0c7643f68e4aba1bc2291383d7d, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1 &1409726298
 GameObject:
   m_ObjectHideFlags: 0
@@ -35697,6 +35719,7 @@ MonoBehaviour:
   knife: {fileID: 280337304}
   isOver: 0
   losePanel: {fileID: 6643461941606409354}
+  Balls: []
 --- !u!1 &1486550689
 GameObject:
   m_ObjectHideFlags: 0
@@ -35941,6 +35964,7 @@ MonoBehaviour:
   skybox: {fileID: 2100000, guid: e0bca20dd400c2940a1c2c42c3ae10c4, type: 2}
   skybox2: {fileID: 2100000, guid: d2845a72423545d45a6d286bb5d63950, type: 2}
   tail: {fileID: 1486550696}
+  camAnim: {fileID: 1408766780}
 --- !u!95 &1486550699
 Animator:
   serializedVersion: 4
