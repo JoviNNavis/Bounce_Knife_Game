@@ -18,7 +18,7 @@ public class FailScript1 : MonoBehaviour
     public Transform newBallPos;
     public GameObject puntured_ball;
 
-    public GameObject playerUiPos;
+    public Slider playerCrownSlider;
     public Image playerImg;
 
     void Start()
@@ -153,13 +153,13 @@ public class FailScript1 : MonoBehaviour
         yield return new WaitForSeconds(0.3f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
         playerImg.fillAmount -= 0.01335f;
-        playerUiPos.transform.position -= new Vector3(5.5f, 0, 0);
+        playerCrownSlider.value -= 0.01335f;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.2f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.08f, false).OnComplete(knifeRemove);
         playerImg.fillAmount -= 0.01335f;
-        playerUiPos.transform.position -= new Vector3(5.5f, 0, 0);
+        playerCrownSlider.value -= 0.01335f;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.1f);
@@ -173,14 +173,14 @@ public class FailScript1 : MonoBehaviour
         Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
         playerImg.fillAmount -= 0.01335f;
-        playerUiPos.transform.position -= new Vector3(5.5f, 0, 0);
+        playerCrownSlider.value -= 0.01335f;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.45f);
         Debug.Log("2");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
         playerImg.fillAmount -= 0.01335f;
-        playerUiPos.transform.position -= new Vector3(5.5f, 0, 0);
+        playerCrownSlider.value -= 0.01335f;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.45f);
@@ -189,7 +189,7 @@ public class FailScript1 : MonoBehaviour
         Knifes.RemoveAt(Knifes.Count - 1);
         Debug.Log("3");
         playerImg.fillAmount -= 0.01335f;
-        playerUiPos.transform.position -= new Vector3(5.5f, 0, 0);
+        playerCrownSlider.value -= 0.01335f;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         newBallPos.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.3f);
@@ -203,13 +203,13 @@ public class FailScript1 : MonoBehaviour
         Debug.Log("1");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
         playerImg.fillAmount -= 0.01335f;
-        playerUiPos.transform.position -= new Vector3(5.5f, 0, 0);
+        playerCrownSlider.value -= 0.01335f;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.1f);
         Debug.Log("2");
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.03f, false).OnComplete(knifeRemove);
         playerImg.fillAmount -= 0.01335f;
-        playerUiPos.transform.position -= new Vector3(5.5f, 0, 0);
+        playerCrownSlider.value -= 0.01335f;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.05f);
         Knifes.ElementAt(Knifes.Count - 1).DOMoveX(1, 0.01f, false);
@@ -217,7 +217,7 @@ public class FailScript1 : MonoBehaviour
         Knifes.RemoveAt(Knifes.Count - 1);
         Debug.Log("3");
         playerImg.fillAmount -= 0.01335f;
-        playerUiPos.transform.position -= new Vector3(5.5f, 0, 0);
+        playerCrownSlider.value -= 0.01335f;
         KnifePlayer.transform.position -= new Vector3(0, 0.7f, 0);
         yield return new WaitForSeconds(0.3f);
         knife1.enabled = true;

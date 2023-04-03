@@ -16,7 +16,7 @@ public class KnifeScript : MonoBehaviour
     [SerializeField] private float nextfireRate;
     public int totalblocks;
     public GameObject knife;
-    public GameObject PlayerRank;
+    public Slider playerCrownSlider;
     int rand;
     int randcolors;
     public Transform newBallPos;
@@ -91,7 +91,8 @@ public class KnifeScript : MonoBehaviour
                     newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                     transform.rotation = Quaternion.Euler(90, -180, 0);
                     playerImg.fillAmount += fillValue;
-                    PlayerRank.transform.position += new Vector3(rankValue, 0, 0);
+                    playerCrownSlider.value += fillValue;
+                    //PlayerRank.transform.position += new Vector3(rankValue, 0, 0);
                     fireTime = 0;
                     if (randcolors >= knifemat.Length)
                     {
@@ -107,8 +108,9 @@ public class KnifeScript : MonoBehaviour
                     newBallPos.transform.position += new Vector3(0, 0.7f, 0);
                     transform.rotation = Quaternion.Euler(90, -180, 0);
                     playerImg.fillAmount += fillValue;
-                    PlayerRank.transform.position += new Vector3(rankValue, 0, 0);
-                    fireTime = 0;
+                    playerCrownSlider.value += fillValue;
+                //PlayerRank.transform.position += new Vector3(rankValue, 0, 0);
+                fireTime = 0;
                 }
             
           
