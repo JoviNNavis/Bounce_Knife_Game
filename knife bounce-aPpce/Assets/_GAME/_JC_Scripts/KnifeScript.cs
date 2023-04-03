@@ -24,13 +24,12 @@ public class KnifeScript : MonoBehaviour
     public Image playerImg;
     public bool playerchangecolor;
     public float fillValue;
-    public float rankValue;
 
     public GameObject counterText;
 
     void Start()
     {
-        fireRate = 7;
+        
     }
 
 
@@ -44,7 +43,7 @@ public class KnifeScript : MonoBehaviour
         if (Input.GetMouseButton(1))
         {
             Shooting();
-            counterText.SetActive(true);
+            
         }
         else
         {
@@ -57,7 +56,7 @@ public class KnifeScript : MonoBehaviour
 
             if (touch.phase == TouchPhase.Began)
             {
-
+                
                 isTouch = true;
             }
             if (touch.phase == TouchPhase.Ended)
@@ -78,13 +77,14 @@ public class KnifeScript : MonoBehaviour
        
         fireTime += Time.deltaTime;
         nextfireRate = 1 / fireRate;
-
+        counterText.SetActive(true);
         if (fireTime >= nextfireRate)
         {
-          
-                if (ischangecolor)
+            
+            if (ischangecolor)
                 {
-                    _knife = Instantiate(knifemat[randcolors], transform.position, Quaternion.identity);
+                
+                _knife = Instantiate(knifemat[randcolors], transform.position, Quaternion.identity);
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
                     randcolors++;
                     transform.position += new Vector3(0, 0.7f, 0);
@@ -101,7 +101,8 @@ public class KnifeScript : MonoBehaviour
                 }
                 else
                 {
-                    GameObject _knife = Instantiate(knife, transform.position, Quaternion.identity);
+                
+                GameObject _knife = Instantiate(knife, transform.position, Quaternion.identity);
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
 
                     transform.position += new Vector3(0, 0.7f, 0);
@@ -119,7 +120,7 @@ public class KnifeScript : MonoBehaviour
 
     IEnumerator txtDisable()
     {
-        yield return new WaitForSeconds(0.5f);
+        yield return new WaitForSeconds(0.55f);
         counterText.SetActive(false);
     }
 

@@ -31,7 +31,7 @@ public class BallSpinScript : MonoBehaviour
 
         if (timer >= 0 && timer <= 12.8)
         {
-            transform.Rotate(0, 1f, 0);
+            transform.Rotate(0, 1.5f, 0);
 
             for (int i = 0; i < Balls.Count; i++)
             {
@@ -41,7 +41,7 @@ public class BallSpinScript : MonoBehaviour
 
         if (timer >= 13 && timer <= 27.8)
         {
-            transform.Rotate(0, -1f, 0);
+            transform.Rotate(0, -1.5f, 0);
 
             for (int i = 0; i < Balls.Count; i++)
             {
@@ -51,7 +51,7 @@ public class BallSpinScript : MonoBehaviour
 
         if (timer > 28)
         {
-            transform.Rotate(0, 1f, 0);
+            transform.Rotate(0, 1.5f, 0);
 
             for (int i = 0; i < Balls.Count; i++)
             {
