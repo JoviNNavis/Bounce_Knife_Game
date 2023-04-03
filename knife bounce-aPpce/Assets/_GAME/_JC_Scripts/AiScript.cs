@@ -19,7 +19,7 @@ public class AiScript : MonoBehaviour
 
     void Start()
     {
-        fireRate1 = 1.6f;
+        fireRate1 = 5f;
     }
 
     private void FixedUpdate()

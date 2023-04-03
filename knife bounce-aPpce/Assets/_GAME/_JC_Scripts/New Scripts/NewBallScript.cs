@@ -131,7 +131,7 @@ public class NewBallScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Knife") || collision.gameObject.CompareTag("DKnife"))
         {
-            if (FindObjectOfType<Ballpowerup>().time < 0.3f)
+            if (FindObjectOfType<Ballpowerup>().time < 0.4f)
             {
                 camAnim.SetBool("Move", true);
               FindObjectOfType<ButtonManager>().changecolor = true;
