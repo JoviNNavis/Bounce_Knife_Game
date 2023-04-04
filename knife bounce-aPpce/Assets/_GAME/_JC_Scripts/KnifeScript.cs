@@ -38,7 +38,7 @@ public class KnifeScript : MonoBehaviour
        
         ischangecolor = FindObjectOfType<ButtonManager>().changecolor;
         rand = Random.Range(0, knifemat.Length);
-        transform.Rotate(0.5f, 0, 0);
+        transform.Rotate(3f, 0, 0);
         playerchangecolor = FindObjectOfType<ButtonManager>().changecolor;
         if (Input.GetMouseButton(1))
         {
@@ -84,7 +84,7 @@ public class KnifeScript : MonoBehaviour
             if (ischangecolor)
                 {
                 
-                _knife = Instantiate(knifemat[randcolors], transform.position, Quaternion.identity);
+                _knife = Instantiate(knifemat[randcolors], new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
                     randcolors++;
                     transform.position += new Vector3(0, 0.7f, 0);
@@ -102,7 +102,7 @@ public class KnifeScript : MonoBehaviour
                 else
                 {
                 
-                GameObject _knife = Instantiate(knife, transform.position, Quaternion.identity);
+                GameObject _knife = Instantiate(knife, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
 
                     transform.position += new Vector3(0, 0.7f, 0);

@@ -6,7 +6,7 @@ using DG.Tweening;
 public class WinScript1 : MonoBehaviour
 {
     public GameObject blast, winText;
-    public GameObject lvl, retry;
+    public GameObject lvl, retry, target, text;
 
     public KnifeScript1 playerKnife;
 
@@ -31,6 +31,8 @@ public class WinScript1 : MonoBehaviour
             retry.SetActive(false);
             blast.SetActive(true);
             winText.SetActive(true);
+            text.SetActive(false);
+            Destroy(target);
         }
     }
 }

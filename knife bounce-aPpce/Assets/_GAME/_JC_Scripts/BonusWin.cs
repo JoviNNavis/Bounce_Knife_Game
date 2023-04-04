@@ -8,7 +8,7 @@ public class BonusWin : MonoBehaviour
 
     public BonusKnifeScript knife;
 
-    public GameObject confetti, ui, rewardPnael, button;
+    public GameObject confetti, ui, rewardPnael, button, target;
 
     void Start()
     {
@@ -25,6 +25,7 @@ public class BonusWin : MonoBehaviour
     {
         if(other.CompareTag("Knife"))
         {
+            Destroy(target);
             up.enabled = false;
             knife.enabled = false;
             ui.SetActive(false);

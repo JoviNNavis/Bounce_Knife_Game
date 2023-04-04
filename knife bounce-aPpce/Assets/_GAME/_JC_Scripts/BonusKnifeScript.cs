@@ -16,6 +16,8 @@ public class BonusKnifeScript : MonoBehaviour
 
     public GameObject knife;
 
+    public float posX;
+
     public Image playerImg;
 
     public float fillValue;
@@ -28,7 +30,7 @@ public class BonusKnifeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(0.5f, 0, 0);
+        transform.Rotate(1f, 0, 0);
         playerImg.fillAmount += fillValue * Time.deltaTime;
 
         if (Input.GetMouseButton(1))
@@ -51,7 +53,7 @@ public class BonusKnifeScript : MonoBehaviour
 
             if (isTouch)
             {
-                playerImg.fillAmount += fillValue;
+                //playerImg.fillAmount += fillValue;
                 Shooting();
             }
         }
@@ -64,7 +66,7 @@ public class BonusKnifeScript : MonoBehaviour
 
         if (fireTime >= nextfireRate)
         {
-            Instantiate(knife, new Vector3(transform.localPosition.x, transform.localPosition.y, 0.12f), Quaternion.identity);
+            Instantiate(knife, new Vector3(posX, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
             transform.rotation = Quaternion.Euler(90, -180, 0);
             fireTime = 0;
         }

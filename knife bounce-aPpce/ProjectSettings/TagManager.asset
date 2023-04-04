@@ -16,6 +16,10 @@ TagManager:
   - AfterBall
   - Open
   - Stacks
+  - KnifePref
+  - AiPref
+  - km
+  - Stop
   layers:
   - Default
   - TransparentFX

@@ -9337,7 +9337,7 @@ GameObject:
   - component: {fileID: 837195052}
   - component: {fileID: 837195053}
   m_Layer: 0
-  m_Name: Cube (1)
+  m_Name: WinCube
   m_TagString: Finish
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9453,6 +9453,8 @@ MonoBehaviour:
   winText: {fileID: 525053811}
   lvl: {fileID: 811027089}
   retry: {fileID: 127480848}
+  target: {fileID: 1357686245}
+  text: {fileID: 43587914}
   playerKnife: {fileID: 1817783779}
 --- !u!1 &847938248
 GameObject:
@@ -20367,7 +20369,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   ischangecolor: 0
-  fireRate: 5.8
+  fireRate: 7
   knifemat:
   - {fileID: 2590846551577548752, guid: faf32c3f45cae7e468422b9647de6114, type: 3}
   - {fileID: 2590846551577548752, guid: 50af683d8e14d7248a4c0dde9e4e6fe8, type: 3}
