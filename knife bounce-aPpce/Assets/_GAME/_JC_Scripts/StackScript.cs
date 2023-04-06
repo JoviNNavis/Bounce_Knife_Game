@@ -28,7 +28,7 @@ public class StackScript : MonoBehaviour
         {
             stackCount -= 1;
             Instantiate(blast, transform.position, Quaternion.Euler(-90, 0, 0));
-            stacks.transform.position -= new Vector3(0, 0.15f, 0);
+            stacks.transform.localPosition -= new Vector3(0, 0.25f, 0);
             Destroy(other.gameObject);
             Destroy(this.gameObject, 0.1f);
         }

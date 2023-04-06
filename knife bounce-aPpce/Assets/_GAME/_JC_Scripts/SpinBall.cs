@@ -21,6 +21,7 @@ public class SpinBall : MonoBehaviour
     {
         if(other.CompareTag("Knife"))
         {
+            ball.Balls.Remove(transform);
             Destroy(other.gameObject);
             ball.isOver = true;
         }

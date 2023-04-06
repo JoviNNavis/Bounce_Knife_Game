@@ -3776,7 +3776,7 @@ MonoBehaviour:
   knife: {fileID: 2590846551577548752, guid: fbaaa5070a09c644da0b3eea77b89068, type: 3}
   knifeCountText: {fileID: 1925368879}
   knifeCount: 50
-  spanwPosy: 43.4
+  spanwPosy: 43.42
 --- !u!1 &284185179
 GameObject:
   m_ObjectHideFlags: 0

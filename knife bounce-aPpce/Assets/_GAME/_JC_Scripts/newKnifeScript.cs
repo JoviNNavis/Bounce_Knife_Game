@@ -24,7 +24,6 @@ public class newKnifeScript : MonoBehaviour
     void Start()
     {
         xpos = gameObject.transform.position.x - 2f;
-        fireRate = 3;
        
     }
 
