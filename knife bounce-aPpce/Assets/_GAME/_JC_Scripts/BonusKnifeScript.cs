@@ -30,7 +30,7 @@ public class BonusKnifeScript : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.Rotate(1f, 0, 0);
+        transform.Rotate(3f, 0, 0);
         playerImg.fillAmount += fillValue * Time.deltaTime;
 
         if (Input.GetMouseButton(1))
