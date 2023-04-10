@@ -6,7 +6,7 @@ public class SpikeBallScript : MonoBehaviour
 {
     public float upForce;
     public bool powerup_mode;
-   
+    public bool islevelcompleted;
     public ParticleSystem _fire;
     public Material skybox;
     public Material skybox2;
@@ -27,7 +27,22 @@ public class SpikeBallScript : MonoBehaviour
         _fire.Pause();
         _fire.Clear();
     }
+    public void stopwatercolor()
+    {
+        if (islevelcompleted)
+        {
+          //  water.material.SetColor("_BaseColor", _blue);
+            //if (abovelevel5)
+            //{
+            //    RenderSettings.skybox = skyboxafter5;
+            //}
+            //else
+            //{
+            //    RenderSettings.skybox = skyboxbefore5;
+            //}
 
+        }
+    }
     // Update is called once per frame
     void Update()
     {
@@ -41,12 +56,12 @@ public class SpikeBallScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Knife") || collision.gameObject.CompareTag("DKnife"))
         {
-            if (FindObjectOfType<Ballpowerup>().time < 0.35f)
+            if (FindObjectOfType<Ballpowerup>().time < 0.4f)
             {
                 camAnim.SetBool("Move", true);
                 FindObjectOfType<ButtonManager>().changecolor = true;
                 RenderSettings.fogColor = FindObjectOfType<ColorScript>().after_fog;
-
+                FindObjectOfType<Starf1>().inpowermode = true;
 
                 float _newUpforce = upForce + 150;
                 Rb.AddForce(transform.up * _newUpforce, ForceMode.Force);
@@ -62,6 +77,7 @@ public class SpikeBallScript : MonoBehaviour
             {
                 _fire.Pause();
                 _fire.Clear();
+                FindObjectOfType<Starf1>().inpowermode = false;
 
                 camAnim.SetBool("Move", false);
                 powerup_mode = false;

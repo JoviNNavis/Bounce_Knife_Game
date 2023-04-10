@@ -156,6 +156,8 @@ public class ButtonManager : MonoBehaviour
         knifeSkniPanel.SetActive(true);
         Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
         ShowCase.SetActive(false);
+        button.SetActive(false);
+
     }
 
     public void defaultKnife()
@@ -178,6 +180,7 @@ public class ButtonManager : MonoBehaviour
         cam.gameObject.SetActive(true);
         ShowCase.SetActive(false);
         Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
+        button.SetActive(true);
     }
 
     public void EnableSculptRoom()
@@ -188,6 +191,8 @@ public class ButtonManager : MonoBehaviour
         Dirlight.transform.rotation = Quaternion.Euler(50, -30, 0);
         ShowCase.SetActive(false);
         knifeSkniPanel.SetActive(false);
+        button.SetActive(false);
+
     }
 
     public void statueRoom()
@@ -198,6 +203,8 @@ public class ButtonManager : MonoBehaviour
         ShowCase.SetActive(true);
         Room.SetActive(false);
         knifeSkniPanel.SetActive(false);
+        button.SetActive(false);
+
 
     }
     IEnumerator playButton1()

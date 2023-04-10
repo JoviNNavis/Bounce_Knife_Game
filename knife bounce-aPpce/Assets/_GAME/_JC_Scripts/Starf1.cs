@@ -40,17 +40,28 @@ public class Starf1 : MonoBehaviour
         
             if (other.CompareTag("Knife"))
             {
-            if (FindObjectOfType<SpikeBallScript>().powerup_mode || FindObjectOfType<NewBallScript>().powerup_mode)
+            //if (FindObjectOfType<SpikeBallScript>().powerup_mode || FindObjectOfType<NewBallScript>().powerup_mode)
+            //    {
+            //       meshCol.enabled = false; 
+            //   }
+            //if (FindObjectOfType<SpikeBallScript>().powerup_mode == false || FindObjectOfType<NewBallScript>().powerup_mode == false)
+            //{
+            //    failS.failed();
+            //    meshCol.enabled = false;
+            //    spike.enabled = false;
+            //}
+
+
+            if(inpowermode)
                 {
-                   meshCol.enabled = false; 
-               }
-            if (FindObjectOfType<SpikeBallScript>().powerup_mode == false || FindObjectOfType<NewBallScript>().powerup_mode == false)
+                meshCol.enabled = false;
+            }
+            if (!inpowermode)
             {
-                failS.failed();
+                FindObjectOfType<FailScript1>().failed();
                 meshCol.enabled = false;
                 spike.enabled = false;
             }
-
 
         }
         

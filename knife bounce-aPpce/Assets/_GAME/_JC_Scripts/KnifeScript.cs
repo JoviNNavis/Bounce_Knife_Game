@@ -103,6 +103,7 @@ public class KnifeScript : MonoBehaviour
                 {
                 
                 GameObject _knife = Instantiate(knife, new Vector3(2.4f, transform.localPosition.y, transform.localPosition.z), Quaternion.identity);
+
                     FindObjectOfType<FailScript1>().Knifes.Add(_knife.gameObject.transform);
 
                     transform.position += new Vector3(0, 0.7f, 0);

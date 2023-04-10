@@ -153,6 +153,7 @@ MonoBehaviour:
   speed: 65
   tower: {fileID: 0}
   drops: {fileID: 2972288043886553753, guid: 242ef5c18410a6e4fbe21f0290d74aa8, type: 3}
+  plane: {fileID: 2709312312330797167, guid: 26753bfd1371b754ca6bf653c05f5142, type: 3}
   knife: {fileID: 2590846551451260453}
 --- !u!135 &699753498705485528
 SphereCollider:
@@ -177,7 +178,7 @@ Animator:
   m_GameObject: {fileID: 2590846551577548752}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: 2de0b3bde6917ab4ababd51390ab978e, type: 2}
+  m_Controller: {fileID: 9100000, guid: cc5e7f806d58ae642b68362546a696da, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0

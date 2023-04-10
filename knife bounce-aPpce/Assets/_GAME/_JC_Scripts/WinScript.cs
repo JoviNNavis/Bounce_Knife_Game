@@ -10,17 +10,20 @@ public class WinScript : MonoBehaviour
 
     public GameObject newBall;
     public Transform jumpPos;
-
+    public bool spikelevel;
     public KnifeScript playerKnife;
     public AiScript aiKnife;
+    private Color _blue;
+    private MeshRenderer water;
     public GameObject text, target;
     public GameObject lostPanel;
-
+    public bool islevelcompleted;
     public bool isLost = false;
 
     void Start()
     {
-        
+        water = FindObjectOfType<ButtonManager>().water;
+        _blue = new Color32(0, 137, 255, 255);
     }
 
     
@@ -28,15 +31,27 @@ public class WinScript : MonoBehaviour
     {
         
     }
+    public void stopwatercolor()
+    {
+        if (islevelcompleted)
+        {
+            water.material.SetColor("_BaseColor", _blue);
+            
 
+        }
+    }
     private void OnTriggerEnter(Collider other)
     {
         if(isLost == false && other.CompareTag("Knife"))
         {
             playerKnife.enabled = false;
             FindObjectOfType<KnifeScript>().counterText.SetActive(false);
-            FindObjectOfType<NewBallScript>().islevelcompleted = true;
-            FindObjectOfType<NewBallScript>().stopwatercolor();
+
+            islevelcompleted = true;
+              stopwatercolor();
+            
+
+           
             aiKnife.enabled = false;
             lvl.SetActive(false);
             blast.SetActive(true);

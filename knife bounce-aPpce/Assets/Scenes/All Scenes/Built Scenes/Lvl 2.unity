@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.39449438, g: 0.8759387, b: 0.9963221, a: 1}
+  m_IndirectSpecularColor: {r: 0.3944943, g: 0.8759387, b: 0.9963221, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -427,10 +427,10 @@ GameObject:
   - component: {fileID: 25542838}
   m_Layer: 0
   m_Name: CubeBlack (2)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &25542833
 Transform:
@@ -458,7 +458,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &25542835
 MeshRenderer:
@@ -524,7 +524,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &25542838
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -6648,10 +6647,10 @@ GameObject:
   - component: {fileID: 102589847}
   m_Layer: 0
   m_Name: CubeRed (2)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &102589842
 Transform:
@@ -6679,7 +6678,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &102589844
 MeshRenderer:
@@ -6745,7 +6744,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &102589847
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7271,10 +7269,10 @@ GameObject:
   - component: {fileID: 125126638}
   m_Layer: 0
   m_Name: CubeRed (15)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &125126633
 Transform:
@@ -7302,7 +7300,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &125126635
 MeshRenderer:
@@ -7368,7 +7366,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &125126638
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7648,10 +7645,10 @@ GameObject:
   - component: {fileID: 136021638}
   m_Layer: 0
   m_Name: CubeBlack
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &136021633
 Transform:
@@ -7660,7 +7657,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 136021632}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.75, z: 0}
   m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
   m_ConstrainProportionsScale: 0
@@ -7679,7 +7676,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &136021635
 MeshRenderer:
@@ -7745,7 +7742,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &136021638
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -7846,10 +7842,10 @@ GameObject:
   - component: {fileID: 139468717}
   m_Layer: 0
   m_Name: CubeRed (1)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &139468712
 Transform:
@@ -7877,7 +7873,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &139468714
 MeshRenderer:
@@ -7943,7 +7939,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &139468717
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8556,10 +8551,10 @@ GameObject:
   - component: {fileID: 184650731}
   m_Layer: 0
   m_Name: CubeRed (8)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &184650726
 Transform:
@@ -8587,7 +8582,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &184650728
 MeshRenderer:
@@ -8653,7 +8648,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &184650731
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -8883,10 +8877,10 @@ GameObject:
   - component: {fileID: 214004674}
   m_Layer: 0
   m_Name: CubeBlack (14)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &214004669
 Transform:
@@ -8914,7 +8908,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &214004671
 MeshRenderer:
@@ -8980,7 +8974,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &214004674
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9127,10 +9120,10 @@ GameObject:
   - component: {fileID: 215796299}
   m_Layer: 0
   m_Name: CubeBlack (3)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &215796294
 Transform:
@@ -9158,7 +9151,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &215796296
 MeshRenderer:
@@ -9224,7 +9217,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &215796299
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10079,10 +10071,10 @@ GameObject:
   - component: {fileID: 244710616}
   m_Layer: 0
   m_Name: CubeBlack (18)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &244710611
 Transform:
@@ -10110,7 +10102,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &244710613
 MeshRenderer:
@@ -10176,7 +10168,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &244710616
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -10957,10 +10948,10 @@ GameObject:
   - component: {fileID: 287068865}
   m_Layer: 0
   m_Name: CubeRed (19)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &287068860
 Transform:
@@ -10988,7 +10979,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &287068862
 MeshRenderer:
@@ -11054,7 +11045,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &287068865
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17113,10 +17103,10 @@ GameObject:
   - component: {fileID: 355278957}
   m_Layer: 0
   m_Name: CubeBlack (5)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &355278952
 Transform:
@@ -17144,7 +17134,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &355278954
 MeshRenderer:
@@ -17210,7 +17200,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &355278957
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17492,10 +17481,10 @@ GameObject:
   - component: {fileID: 372013896}
   m_Layer: 0
   m_Name: CubeRed (9)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &372013891
 Transform:
@@ -17523,7 +17512,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &372013893
 MeshRenderer:
@@ -17589,7 +17578,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &372013896
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -17622,10 +17610,10 @@ GameObject:
   - component: {fileID: 376242217}
   m_Layer: 0
   m_Name: CubeBlack (11)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &376242212
 Transform:
@@ -17653,7 +17641,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &376242214
 MeshRenderer:
@@ -17719,7 +17707,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &376242217
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18268,10 +18255,10 @@ GameObject:
   - component: {fileID: 394020359}
   m_Layer: 0
   m_Name: CubeBlack (22)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &394020354
 Transform:
@@ -18299,7 +18286,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &394020356
 MeshRenderer:
@@ -18365,7 +18352,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &394020359
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -18900,7 +18886,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &431842323
 Transform:
   m_ObjectHideFlags: 0
@@ -19178,10 +19164,10 @@ GameObject:
   - component: {fileID: 443813831}
   m_Layer: 0
   m_Name: CubeRed (17)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &443813826
 Transform:
@@ -19209,7 +19195,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &443813828
 MeshRenderer:
@@ -19275,7 +19261,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &443813831
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21367,10 +21352,10 @@ GameObject:
   - component: {fileID: 526831224}
   m_Layer: 0
   m_Name: CubeBlack (4)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &526831219
 Transform:
@@ -21398,7 +21383,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &526831221
 MeshRenderer:
@@ -21464,7 +21449,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &526831224
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21611,10 +21595,10 @@ GameObject:
   - component: {fileID: 542384572}
   m_Layer: 0
   m_Name: CubeRed (23)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &542384567
 Transform:
@@ -21642,7 +21626,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &542384569
 MeshRenderer:
@@ -21708,7 +21692,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &542384572
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -21744,7 +21727,7 @@ GameObject:
   m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &547279671
 Transform:
@@ -21755,7 +21738,7 @@ Transform:
   m_GameObject: {fileID: 547279670}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 1.2499999, z: 0}
-  m_LocalScale: {x: 0.2, y: 0.49999997, z: 0.20000002}
+  m_LocalScale: {x: 0.2, y: 0.5, z: 0.2}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 431842323}
@@ -21772,7 +21755,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &547279673
 MeshRenderer:
@@ -21838,7 +21821,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &547279676
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -23371,10 +23353,10 @@ GameObject:
   - component: {fileID: 610058331}
   m_Layer: 0
   m_Name: CubeRed (16)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &610058326
 Transform:
@@ -23402,7 +23384,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &610058328
 MeshRenderer:
@@ -23468,7 +23450,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &610058331
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24740,10 +24721,10 @@ GameObject:
   - component: {fileID: 667706452}
   m_Layer: 0
   m_Name: CubeBlack (7)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &667706447
 Transform:
@@ -24771,7 +24752,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &667706449
 MeshRenderer:
@@ -24837,7 +24818,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &667706452
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -24870,10 +24850,10 @@ GameObject:
   - component: {fileID: 674860705}
   m_Layer: 0
   m_Name: CubeRed (3)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &674860700
 Transform:
@@ -24901,7 +24881,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &674860702
 MeshRenderer:
@@ -24967,7 +24947,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &674860705
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -25847,10 +25826,10 @@ GameObject:
   - component: {fileID: 722296484}
   m_Layer: 0
   m_Name: CubeRed (10)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &722296479
 Transform:
@@ -25878,7 +25857,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &722296481
 MeshRenderer:
@@ -25944,7 +25923,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &722296484
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -32933,11 +32911,13 @@ MonoBehaviour:
   retry: {fileID: 127480848}
   newBall: {fileID: 2007718616}
   jumpPos: {fileID: 899697469}
+  spikelevel: 0
   playerKnife: {fileID: 1817783779}
   aiKnife: {fileID: 1920393867}
   text: {fileID: 730479464}
   target: {fileID: 1357686245}
   lostPanel: {fileID: 1628282492}
+  islevelcompleted: 0
   isLost: 0
 --- !u!54 &837195052
 Rigidbody:
@@ -32971,10 +32951,10 @@ GameObject:
   - component: {fileID: 843430518}
   m_Layer: 0
   m_Name: CubeBlack (20)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &843430513
 Transform:
@@ -33002,7 +32982,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &843430515
 MeshRenderer:
@@ -33068,7 +33048,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &843430518
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -33625,10 +33604,10 @@ GameObject:
   - component: {fileID: 868486825}
   m_Layer: 0
   m_Name: CubeBlack (19)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &868486820
 Transform:
@@ -33656,7 +33635,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &868486822
 MeshRenderer:
@@ -33722,7 +33701,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &868486825
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35457,10 +35435,10 @@ GameObject:
   - component: {fileID: 950246487}
   m_Layer: 0
   m_Name: CubeRed (5)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &950246482
 Transform:
@@ -35488,7 +35466,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &950246484
 MeshRenderer:
@@ -35554,7 +35532,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &950246487
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -35992,7 +35969,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
   m_LocalRotation: {x: -0.042747617, y: -0, z: -0, w: 0.99908596}
-  m_LocalPosition: {x: 0, y: 2.64, z: -13.94}
+  m_LocalPosition: {x: 0, y: 27.48, z: -14.19}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -41682,10 +41659,10 @@ GameObject:
   - component: {fileID: 1000735543}
   m_Layer: 0
   m_Name: CubeBlack (16)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1000735538
 Transform:
@@ -41713,7 +41690,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1000735540
 MeshRenderer:
@@ -41779,7 +41756,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1000735543
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42531,10 +42507,10 @@ GameObject:
   - component: {fileID: 1027952012}
   m_Layer: 0
   m_Name: CubeBlack (15)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1027952007
 Transform:
@@ -42562,7 +42538,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1027952009
 MeshRenderer:
@@ -42628,7 +42604,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1027952012
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -42927,10 +42902,10 @@ GameObject:
   - component: {fileID: 1077962257}
   m_Layer: 0
   m_Name: CubeRed (11)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1077962252
 Transform:
@@ -42958,7 +42933,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1077962254
 MeshRenderer:
@@ -43024,7 +42999,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1077962257
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -44859,10 +44833,10 @@ GameObject:
   - component: {fileID: 1176789033}
   m_Layer: 0
   m_Name: CubeBlack (21)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1176789028
 Transform:
@@ -44890,7 +44864,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1176789030
 MeshRenderer:
@@ -44956,7 +44930,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1176789033
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -45753,10 +45726,10 @@ GameObject:
   - component: {fileID: 1207738566}
   m_Layer: 0
   m_Name: CubeRed (21)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1207738561
 Transform:
@@ -45784,7 +45757,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1207738563
 MeshRenderer:
@@ -45850,7 +45823,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1207738566
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -46630,10 +46602,10 @@ GameObject:
   - component: {fileID: 1253692808}
   m_Layer: 0
   m_Name: CubeBlack (8)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1253692803
 Transform:
@@ -46661,7 +46633,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1253692805
 MeshRenderer:
@@ -46727,7 +46699,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1253692808
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -47671,10 +47642,10 @@ GameObject:
   - component: {fileID: 1314735135}
   m_Layer: 0
   m_Name: CubeRed (14)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1314735130
 Transform:
@@ -47702,7 +47673,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1314735132
 MeshRenderer:
@@ -47768,7 +47739,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1314735135
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -48417,10 +48387,10 @@ GameObject:
   - component: {fileID: 1340237158}
   m_Layer: 0
   m_Name: CubeBlack (10)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1340237153
 Transform:
@@ -48448,7 +48418,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1340237155
 MeshRenderer:
@@ -48514,7 +48484,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1340237158
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49327,10 +49296,10 @@ GameObject:
   - component: {fileID: 1367851027}
   m_Layer: 0
   m_Name: CubeRed (6)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1367851022
 Transform:
@@ -49358,7 +49327,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1367851024
 MeshRenderer:
@@ -49424,7 +49393,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1367851027
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -49652,10 +49620,10 @@ GameObject:
   - component: {fileID: 1380973988}
   m_Layer: 0
   m_Name: CubeRed (7)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1380973983
 Transform:
@@ -49683,7 +49651,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1380973985
 MeshRenderer:
@@ -49749,7 +49717,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1380973988
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51162,10 +51129,10 @@ GameObject:
   - component: {fileID: 1436495818}
   m_Layer: 0
   m_Name: CubeBlack (9)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1436495813
 Transform:
@@ -51193,7 +51160,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1436495815
 MeshRenderer:
@@ -51259,7 +51226,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1436495818
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51292,10 +51258,10 @@ GameObject:
   - component: {fileID: 1443066546}
   m_Layer: 0
   m_Name: CubeRed (24)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1443066541
 Transform:
@@ -51323,7 +51289,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1443066543
 MeshRenderer:
@@ -51389,7 +51355,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1443066546
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51498,10 +51463,10 @@ GameObject:
   - component: {fileID: 1451514158}
   m_Layer: 0
   m_Name: CubeRed (20)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1451514153
 Transform:
@@ -51529,7 +51494,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1451514155
 MeshRenderer:
@@ -51595,7 +51560,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1451514158
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -51708,10 +51672,10 @@ GameObject:
   - component: {fileID: 1457399702}
   m_Layer: 0
   m_Name: CubeBlack (6)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1457399697
 Transform:
@@ -51739,7 +51703,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1457399699
 MeshRenderer:
@@ -51805,7 +51769,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1457399702
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -52147,10 +52110,10 @@ GameObject:
   - component: {fileID: 1468424641}
   m_Layer: 0
   m_Name: CubeRed (12)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1468424636
 Transform:
@@ -52178,7 +52141,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1468424638
 MeshRenderer:
@@ -52244,7 +52207,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1468424641
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -53175,10 +53137,10 @@ GameObject:
   - component: {fileID: 1499662639}
   m_Layer: 0
   m_Name: CubeBlack (13)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1499662634
 Transform:
@@ -53206,7 +53168,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1499662636
 MeshRenderer:
@@ -53272,7 +53234,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1499662639
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -58461,10 +58422,10 @@ GameObject:
   - component: {fileID: 1520943190}
   m_Layer: 0
   m_Name: CubeRed (22)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1520943185
 Transform:
@@ -58492,7 +58453,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1520943187
 MeshRenderer:
@@ -58558,7 +58519,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1520943190
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -60836,10 +60796,10 @@ GameObject:
   - component: {fileID: 1644145689}
   m_Layer: 0
   m_Name: CubeBlack (23)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1644145684
 Transform:
@@ -60867,7 +60827,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1644145686
 MeshRenderer:
@@ -60933,7 +60893,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1644145689
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -62643,10 +62602,10 @@ GameObject:
   - component: {fileID: 1762525655}
   m_Layer: 0
   m_Name: CubeBlack (17)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1762525650
 Transform:
@@ -62674,7 +62633,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1762525652
 MeshRenderer:
@@ -62740,7 +62699,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1762525655
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -63798,10 +63756,10 @@ GameObject:
   - component: {fileID: 1828264443}
   m_Layer: 0
   m_Name: CubeBlack (1)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1828264438
 Transform:
@@ -63829,7 +63787,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1828264440
 MeshRenderer:
@@ -63895,7 +63853,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1828264443
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -64646,10 +64603,10 @@ GameObject:
   - component: {fileID: 1880027713}
   m_Layer: 0
   m_Name: CubeRed (4)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1880027708
 Transform:
@@ -64677,7 +64634,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1880027710
 MeshRenderer:
@@ -64743,7 +64700,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1880027713
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -65442,10 +65398,10 @@ GameObject:
   - component: {fileID: 1944034907}
   m_Layer: 0
   m_Name: CubeBlack (12)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1944034902
 Transform:
@@ -65473,7 +65429,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1944034904
 MeshRenderer:
@@ -65539,7 +65495,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1944034907
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -65572,10 +65527,10 @@ GameObject:
   - component: {fileID: 1954832368}
   m_Layer: 0
   m_Name: CubeRed (13)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &1954832363
 Transform:
@@ -65603,7 +65558,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &1954832365
 MeshRenderer:
@@ -65669,7 +65624,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &1954832368
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -72265,10 +72219,10 @@ GameObject:
   - component: {fileID: 2058135863}
   m_Layer: 0
   m_Name: CubeRed (18)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2058135858
 Transform:
@@ -72296,7 +72250,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2058135860
 MeshRenderer:
@@ -72362,7 +72316,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: 07a8d69cf621c41419e04c74e12e03f3, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &2058135863
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -73137,10 +73090,10 @@ GameObject:
   - component: {fileID: 2092528839}
   m_Layer: 0
   m_Name: CubeBlack (24)
-  m_TagString: Untagged
+  m_TagString: Stacks
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 2147483647
+  m_StaticEditorFlags: 0
   m_IsActive: 1
 --- !u!4 &2092528834
 Transform:
@@ -73168,7 +73121,7 @@ BoxCollider:
   m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
+  m_Size: {x: 1, y: 1.2, z: 1}
   m_Center: {x: 0, y: 0, z: 0}
 --- !u!23 &2092528836
 MeshRenderer:
@@ -73234,7 +73187,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   blast: {fileID: 7860723309039395521, guid: cabfa200f7a7fca44a9c04f583dece87, type: 3}
   stacks: {fileID: 431842322}
-  stackCount: 50
 --- !u!54 &2092528839
 Rigidbody:
   m_ObjectHideFlags: 0
