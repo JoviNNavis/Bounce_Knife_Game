@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.7870668, g: 0.52118784, b: 0.9249376, a: 1}
+  m_IndirectSpecularColor: {r: 0.7868463, g: 0.5208547, b: 0.9249138, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -13133,7 +13133,7 @@ MonoBehaviour:
   fireRate: 6.5
   fireTime: 0
   nextfireRate: 1
-  knife: {fileID: 2590846551577548752, guid: 39cb3fbf5d4a3204193067cfa5a9c73b, type: 3}
+  knife: {fileID: 2590846551577548752, guid: 737c61e8dffc7374287ba61ebd073272, type: 3}
   posX: 2.6
   playerImg: {fileID: 1067180418}
   fillValue: 0.015

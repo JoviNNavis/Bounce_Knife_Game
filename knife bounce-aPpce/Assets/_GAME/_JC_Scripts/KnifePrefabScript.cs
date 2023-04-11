@@ -11,12 +11,14 @@ public class KnifePrefabScript : MonoBehaviour
     public Transform tower;
     public ParticleSystem drops;
     public GameObject plane;
-
+    public Animator anim;
     public MeshRenderer knife;
 
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        anim = GetComponent<Animator>();
+        plane.SetActive(false);
 
     }
 
@@ -35,8 +37,8 @@ public class KnifePrefabScript : MonoBehaviour
         if (other.gameObject.CompareTag("Block") || other.gameObject.CompareTag("Finish"))
         {
             Instantiate(drops, other.transform.position+ new Vector3(1,0,-0.4f), Quaternion.Euler(0, -270, 0));
-            Instantiate(plane, other.transform.position+new  Vector3(0.77f, 0.05f, -0.15f), Quaternion.Euler(0, -90, 0));
-    
+            //Instantiate(plane, other.transform.position+new  Vector3(0.77f, -0.1f, -0.15f), Quaternion.Euler(0, -90, 0));
+            plane.SetActive(true);
             transform.position = new Vector3(-0.581f, transform.localPosition.y, transform.localPosition.z);
             StartCoroutine(disable());
             this.enabled = false;
@@ -53,9 +55,9 @@ public class KnifePrefabScript : MonoBehaviour
     }
     IEnumerator disableanim()
     {
-        FindObjectOfType<animScript>().anim.SetBool("static", true);
+   anim.SetBool("static", true);
         yield return new WaitForSeconds(0.3f);
-        FindObjectOfType<animScript>().anim.SetBool("static", false);
+    anim.SetBool("static", false);
 
     }
     IEnumerator disable()
