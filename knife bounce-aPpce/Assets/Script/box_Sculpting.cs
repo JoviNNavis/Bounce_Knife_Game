@@ -9,7 +9,7 @@ public class box_Sculpting : MonoBehaviour
     int clicks;
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI powertext;
-    public ParticleSystem confitee;
+   // public ParticleSystem confitee;
     public int Power_coincount;
     public int money_coincount;
     public int speed_coincount;
@@ -35,8 +35,7 @@ public class box_Sculpting : MonoBehaviour
         speedtext.text = speed_coincount.ToString();
         powertext.text = Power_coincount.ToString();
 
-        confitee.Pause();
-        confitee.Clear();
+       
     }
 
     public void SPEED()
@@ -88,7 +87,7 @@ public class box_Sculpting : MonoBehaviour
          if(FindObjectOfType<box_Sculpting>().cubeposes.Count == 0)
             {
                 FindObjectOfType<clicks>().bear.enabled = true;
-                confitee.Play();
+             
                 StartCoroutine(win());
             }
 
