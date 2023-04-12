@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ShowcaseScript : MonoBehaviour
 {
-    public GameObject oldImg, newImg, arrow, newArrow;
+    public GameObject oldImg, newImg, arrow;
 
     public GameObject bearModel, cube, pillar, smoke, img1, img2, button, img;
 
@@ -49,7 +49,7 @@ public class ShowcaseScript : MonoBehaviour
     public void close()
     {
         panelNew.SetActive(false);
-        newArrow.SetActive(true);
+       
     }
 
     IEnumerator bearDisable()

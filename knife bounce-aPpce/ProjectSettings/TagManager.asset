@@ -20,6 +20,12 @@ TagManager:
   - AiPref
   - km
   - Stop
+  - TopRightBlocks
+  - TopLeftBlocks
+  - DownLeftBlocks
+  - DownRightBlocks
+  - Weapon
+  - uibuttons
   layers:
   - Default
   - TransparentFX

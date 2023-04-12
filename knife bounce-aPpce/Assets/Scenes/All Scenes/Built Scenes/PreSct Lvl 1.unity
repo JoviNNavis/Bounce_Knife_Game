@@ -1553,7 +1553,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 119250987}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 212066014}
+        m_TargetAssemblyTypeName: increaseui, Assembly-CSharp
+        m_MethodName: showcasing
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &119250987
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2712,7 +2724,7 @@ MonoBehaviour:
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0.9
+  m_MatchWidthOrHeight: 0.894
   m_PhysicalUnit: 3
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
@@ -2794,6 +2806,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 212066013}
+  - component: {fileID: 212066014}
   m_Layer: 5
   m_Name: ShowCase
   m_TagString: Untagged
@@ -2809,8 +2822,8 @@ RectTransform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 212066012}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: 0, y: 0, z: -2.1122}
+  m_LocalScale: {x: 0.7670943, y: 0.86743, z: 0.86743}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1513044882}
@@ -2826,9 +2839,26 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 1.4333496, y: -0.6977539}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &212066014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 212066012}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fd6be8a95416b1e4f8df45f9c11db191, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  uibuttons: []
+  skinscale: {x: 0, y: 0, z: 0}
+  consolescale: {x: 0, y: 0, z: 0}
+  sculptingscale: {x: 0, y: 0, z: 0}
+  showcasingscale: {x: 0, y: 0, z: 0}
 --- !u!1 &212101254
 GameObject:
   m_ObjectHideFlags: 3
@@ -9187,7 +9217,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 334370802}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 212066014}
+        m_TargetAssemblyTypeName: increaseui, Assembly-CSharp
+        m_MethodName: skinbutton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &334370802
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -9621,7 +9663,7 @@ RectTransform:
   m_GameObject: {fileID: 354418907}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 34.85003, y: 5.3868537, z: 0.9417082}
+  m_LocalScale: {x: 34.85003, y: 4.3009176, z: 0.9417082}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 587781869}
@@ -12932,7 +12974,7 @@ GameObject:
   - component: {fileID: 587781870}
   m_Layer: 5
   m_Name: Console
-  m_TagString: Untagged
+  m_TagString: uibuttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12947,7 +12989,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1.0619, y: 1.0619, z: 1.0619}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 2113400641}
   - {fileID: 1174011540}
@@ -12957,7 +12999,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -234, y: -1638.0001}
+  m_AnchoredPosition: {x: -234, y: -1864.0001}
   m_SizeDelta: {x: 380.8, y: 354.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &587781870
@@ -16223,6 +16265,18 @@ MonoBehaviour:
       - m_Target: {fileID: 500573944}
         m_TargetAssemblyTypeName: ButtonManager, Assembly-CSharp
         m_MethodName: nextLvl
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 212066014}
+        m_TargetAssemblyTypeName: increaseui, Assembly-CSharp
+        m_MethodName: sculpting
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -24613,8 +24667,8 @@ GameObject:
   - component: {fileID: 1166371223}
   - component: {fileID: 1166371222}
   m_Layer: 5
-  m_Name: Knife (1)
-  m_TagString: Untagged
+  m_Name: Knife skin button
+  m_TagString: uibuttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -24638,7 +24692,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -695, y: -1638.0001}
+  m_AnchoredPosition: {x: -695, y: -1864.0001}
   m_SizeDelta: {x: 380.8, y: 354.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1166371222
@@ -25916,7 +25970,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 243, y: -1239}
+  m_AnchoredPosition: {x: 243, y: -1465}
   m_SizeDelta: {x: 178.3, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1266268759
@@ -34254,7 +34308,7 @@ RectTransform:
   m_GameObject: {fileID: 1513044881}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: -31.864086}
-  m_LocalScale: {x: 1.3843151, y: 0.8672671, z: 1.3843151}
+  m_LocalScale: {x: 2.191786, y: 1.3731439, z: 2.191786}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 212066013}
@@ -34262,7 +34316,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 6.154175, y: 207.87}
+  m_AnchoredPosition: {x: 6.154297, y: 207.87}
   m_SizeDelta: {x: -9.52, y: 321.57}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1513044883
@@ -36343,7 +36397,7 @@ GameObject:
   - component: {fileID: 1763529512}
   m_Layer: 5
   m_Name: Tool
-  m_TagString: Untagged
+  m_TagString: uibuttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -36358,7 +36412,7 @@ RectTransform:
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 861781894}
   - {fileID: 1502361412}
@@ -36367,7 +36421,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 245.00003, y: -1638}
+  m_AnchoredPosition: {x: 245.00003, y: -1864}
   m_SizeDelta: {x: 380.8, y: 354.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1763529512
@@ -37017,7 +37071,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -226}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1871831498
@@ -37118,7 +37172,7 @@ GameObject:
   - component: {fileID: 1879804016}
   m_Layer: 5
   m_Name: Lock
-  m_TagString: Untagged
+  m_TagString: uibuttons
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -37142,7 +37196,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 727, y: -1638.0001}
+  m_AnchoredPosition: {x: 727, y: -1864}
   m_SizeDelta: {x: 380.8, y: 354.6}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1879804016
@@ -38282,7 +38336,7 @@ RectTransform:
   m_GameObject: {fileID: 1983058580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 1, y: 0.81428, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 212066013}
@@ -38290,7 +38344,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1633}
+  m_AnchoredPosition: {x: 0, y: -1859}
   m_SizeDelta: {x: 2622.8, y: 566.1}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1983058582
@@ -39622,7 +39676,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2113400643}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 212066014}
+        m_TargetAssemblyTypeName: increaseui, Assembly-CSharp
+        m_MethodName: console
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &2113400643
 MonoBehaviour:
   m_ObjectHideFlags: 0

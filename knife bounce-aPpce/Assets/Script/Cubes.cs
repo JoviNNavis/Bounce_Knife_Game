@@ -63,7 +63,7 @@ public class Cubes : MonoBehaviour
         if (health <= 50){
             cube.material = after;
         }
-        if(health == 0)
+        if(health <= 0)
         {
             Destroy(this.gameObject,1.2f);
             FindObjectOfType<box_Sculpting>().cubeposes.Remove(this.gameObject.transform);

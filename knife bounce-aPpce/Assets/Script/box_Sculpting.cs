@@ -9,7 +9,8 @@ public class box_Sculpting : MonoBehaviour
     int clicks;
     public TextMeshProUGUI moneyText;
     public TextMeshProUGUI powertext;
-   // public ParticleSystem confitee;
+    // public ParticleSystem confitee;
+    public GameObject fingeranim;
     public int Power_coincount;
     public int money_coincount;
     public int speed_coincount;
@@ -34,7 +35,7 @@ public class box_Sculpting : MonoBehaviour
         moneyText.text = money_coincount.ToString();
         speedtext.text = speed_coincount.ToString();
         powertext.text = Power_coincount.ToString();
-
+        fingeranim.SetActive(true);
        
     }
 
@@ -59,14 +60,18 @@ public class box_Sculpting : MonoBehaviour
     IEnumerator knifeanim()
     {
         knife.enabled = true;
+        sword.enabled = true;
         yield return new WaitForSeconds(0.80f);
         knife.enabled = false;
+        sword.enabled = false;
+
 
     }
+
     IEnumerator automatic()
     {
         FindObjectOfType<clicks>().sword.transform.DOMove(cubeposes[randno].position, 0.2f, false);
-        yield return new WaitForSeconds(0.3f);
+        yield return new WaitForSeconds(1f);
         FindObjectOfType<clicks>().sword.transform.DOMove(cubeposes[randno].position - new Vector3(2.5f, 0, 0), 0.2f, false);
     }
     void auto()
@@ -104,38 +109,55 @@ public class box_Sculpting : MonoBehaviour
                     if (target.tag == "TopRightBlocks")
                     {
                         FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(2.2f,0,0f), 2, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(2.2f, 0.0f, 0f), 2, 1, 0.3f, false);
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, 150, -18), 0.2f, RotateMode.Fast);
+                        FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, 150, -25), 0.2f, RotateMode.Fast);
+
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();
                     }
 
                        if (target.tag == "TopLeftBlocks")
                     {
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition+ new Vector3(-0, 0, 0f), 1, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition+ new Vector3(-0, -0.6f, -0.31f), 1, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(-0, -0.6f, -0.31f), 1, 1, 0.3f, false);
+
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, 0, -18), 0.2f, RotateMode.Fast);
+                        FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, 0, -25), 0.2f, RotateMode.Fast);
+
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();
                     }
 
                        if (target.tag == "DownRightBlocks")
                     {
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(2.2f, 0, 0f), 1, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(2.2f, -1.02f, 0f), 1, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(2.2f, -1.02f, 0f), 1, 1, 0.3f, false);
+
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, -150, 18), 0.2f, RotateMode.Fast);
+                        FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, -150, 25), 0.2f, RotateMode.Fast);
+
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();
                     }
                        if (target.tag == "DownLeftBlocks")
                     {
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition+new Vector3(0, 0, 0f),1,1, 0.3f, false);
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition+new Vector3(0, -0.8f, -0.51f),1,1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(0, -0.8f, -0.51f), 1, 1, 0.3f, false);
+
                         FindObjectOfType<clicks>().knife.transform.DOLocalRotate(new Vector3(-0, -0, 18), 0.2f, RotateMode.Fast);
+                        FindObjectOfType<clicks>().sword.transform.DOLocalRotate(new Vector3(-0, -0, 25), 0.2f, RotateMode.Fast);
+
                         money_coincount += 20;
                         moneyText.text = money_coincount.ToString();
-                     //   coinText.text = ((int)coin).ToString();
+                   
                     }
                     if (target.tag == "MiddleBlocks")
                     {
-                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(-1.0f, -0.45f, 0f), 1, 1, 0.3f, false);
-                      
+                        FindObjectOfType<clicks>().knife.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(-1.0f, -0.0f, 0f), 1, 1, 0.3f, false);
+                        FindObjectOfType<clicks>().sword.transform.DOJump(hit.transform.gameObject.transform.localPosition + new Vector3(-1.0f, -0.0f, 0f), 1, 1, 0.3f, false);
+
+
                     }
 
 
@@ -181,6 +203,24 @@ public class box_Sculpting : MonoBehaviour
         }
       
         clicked();
-        auto();
-    }
+        if (Input.GetMouseButtonDown(0))
+        {
+            fingeranim.SetActive(false);
+
+            auto();
+        }
+        if (Input.touchCount > 0)
+        {
+            Touch touch = Input.GetTouch(0);
+
+            if (touch.phase == TouchPhase.Began)
+            {
+                fingeranim.SetActive(false);
+
+                auto();
+
+            }
+        }
+
+        }
 }
