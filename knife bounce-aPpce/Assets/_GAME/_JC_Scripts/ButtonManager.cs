@@ -205,8 +205,14 @@ public class ButtonManager : MonoBehaviour
         knifeSkniPanel.SetActive(false);
         button.SetActive(false);
 
-
     }
+
+    public void showCaseforShowcaseLvl()
+    {
+        knifeSkniPanel.SetActive(false);
+        Room.SetActive(false);
+    }
+
     IEnumerator playButton1()
     {
         yield return new WaitForSeconds(2f);
