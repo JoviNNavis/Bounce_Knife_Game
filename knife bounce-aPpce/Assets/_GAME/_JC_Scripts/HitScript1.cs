@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class HitScript : MonoBehaviour
+public class HitScript1 : MonoBehaviour
 {
     void Start()
     {
@@ -17,13 +17,12 @@ public class HitScript : MonoBehaviour
 
     private void OnCollisionEnter(Collision collision)
     {
-        if(collision.gameObject.tag == "Ball")
-        {
-            collision.transform.position = new Vector3(0.8f, transform.position.y, 0);
-            collision.rigidbody.isKinematic = true;
-          //  Destroy(collision.rigidbody);
-        }
+     
 
-      
+        if (collision.gameObject.tag == "AiBall")
+        {
+            collision.transform.position = new Vector3(-0.8f, transform.position.y, 0);
+            collision.rigidbody.isKinematic = true;
+        }
     }
 }
